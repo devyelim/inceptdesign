@@ -1,0 +1,1705 @@
+
+
+.desktop-principal,
+.desktop-principal * {
+  box-sizing: border-box;
+}
+.desktop-principal {
+  background: #ffffff;
+  width: 1440px;
+  height: 4695px;
+  position: relative;
+  overflow: hidden;
+}
+.p-gina-principal {
+  background: #ffffff;
+  width: 1440px;
+  height: 4711px;
+  position: absolute;
+  left: 0px;
+  top: -15px;
+}
+.rodap {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-37 {
+  background: #2c2b2b;
+  width: 1441px;
+  height: 485px;
+  position: absolute;
+  left: -1px;
+  top: 4225px;
+}
+.line-10 {
+  border-style: solid;
+  border-color: #fdb724;
+  border-width: 3px 0 0 0;
+  width: 1440px;
+  height: 0px;
+  position: absolute;
+  left: -1px;
+  top: 4654px;
+}
+.redes-sociais {
+  width: 118px;
+  height: 70px;
+  position: absolute;
+  left: 1009px;
+  top: 4490px;
+}
+.redes-sociais2 {
+  position: absolute;
+  inset: 0;
+}
+.siga-nos {
+  color: #fdb724;
+  text-align: left;
+  font: 600 18px "Montserrat", sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 118px;
+  height: 20px;
+}
+.icon-instagram {
+  width: 25.24px;
+  height: 25.24px;
+  position: static;
+}
+.group {
+  position: absolute;
+  left: 1px;
+  top: 39px;
+  overflow: visible;
+}
+.icon-facebook {
+  width: 25.24px;
+  height: 25.24px;
+  position: static;
+}
+.group2 {
+  position: absolute;
+  left: 46.24px;
+  top: 39px;
+  overflow: visible;
+}
+.icon-whatsapp {
+  width: 25.24px;
+  height: 25.24px;
+  position: static;
+}
+.group3 {
+  position: absolute;
+  left: 91.48px;
+  top: 39px;
+  overflow: visible;
+}
+.group-27 {
+  width: 107.37px;
+  height: 99.94px;
+  position: static;
+}
+.categorias {
+  width: 103.38px;
+  height: 18.38px;
+  position: static;
+}
+.ajuda {
+  color: #fdb724;
+  text-align: left;
+  font: 600 18px "Montserrat", sans-serif;
+  position: absolute;
+  left: 826.63px;
+  top: 4344.06px;
+  width: 103.38px;
+  height: 18.38px;
+}
+.fale-conosco {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 827px;
+  top: 4377px;
+  width: 107px;
+  height: 13px;
+}
+.reportar-erro {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 827px;
+  top: 4405px;
+  width: 103px;
+  height: 13px;
+}
+.feedback {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 827px;
+  top: 4431px;
+  width: 91px;
+  height: 13px;
+}
+.group-26 {
+  width: 144px;
+  height: 158.94px;
+  position: static;
+}
+.sites {
+  color: #fdb724;
+  text-align: left;
+  font: 600 18px "Montserrat", sans-serif;
+  position: absolute;
+  left: 644.38px;
+  top: 4344.06px;
+  width: 103.38px;
+  height: 18.38px;
+}
+.prazos-e-pre-os {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 644px;
+  top: 4377px;
+  width: 115px;
+  height: 13px;
+}
+.treinamento {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 644px;
+  top: 4405px;
+  width: 120px;
+  height: 13px;
+}
+.metodologia {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 644px;
+  top: 4490px;
+  width: 115px;
+  height: 13px;
+}
+.templates {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 644px;
+  top: 4434px;
+  width: 96px;
+  height: 13px;
+}
+.direitos-autorais {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 644px;
+  top: 4462px;
+  width: 144px;
+  height: 13px;
+}
+.group-25 {
+  width: 162px;
+  height: 187.94px;
+  position: static;
+}
+.vis-o-geral {
+  color: #fdb724;
+  text-align: left;
+  font: 600 18px "Montserrat", sans-serif;
+  position: absolute;
+  left: 449.11px;
+  top: 4344.06px;
+  width: 103.38px;
+  height: 18.38px;
+}
+.sobre-n-s {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 449px;
+  top: 4377px;
+  width: 84px;
+  height: 13px;
+}
+.galeria {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 449px;
+  top: 4405px;
+  width: 70px;
+  height: 13px;
+}
+.modelo-de-neg-cios {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 449px;
+  top: 4519px;
+  width: 149px;
+  height: 13px;
+}
+.formas-de-pagamento {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 449px;
+  top: 4490px;
+  width: 162px;
+  height: 13px;
+}
+.servi-os {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 449px;
+  top: 4434px;
+  width: 66px;
+  height: 13px;
+}
+.portif-lio {
+  color: #fdb724;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 449px;
+  top: 4462px;
+  width: 66px;
+  height: 13px;
+}
+.contato {
+  width: 325px;
+  height: 97px;
+  position: absolute;
+  left: 1009px;
+  top: 4344px;
+}
+.contato2 {
+  position: absolute;
+  inset: 0;
+}
+.group-17 {
+  width: 310.05px;
+  height: 20px;
+  position: static;
+}
+.contato-inseptdesign-gmail-com {
+  color: #fdb724;
+  text-align: left;
+  font: 500 italic 16px "Montserrat", sans-serif;
+  position: absolute;
+  left: 18.48px;
+  top: 38px;
+  width: 291.57px;
+  height: 20px;
+}
+.icon-mail {
+  position: absolute;
+  left: 14.48px;
+  top: 44px;
+  transform: translate(-14.48px, 0px);
+  overflow: visible;
+}
+.group-18 {
+  width: 189.09px;
+  height: 20px;
+  position: static;
+}
+._38-99860-4242 {
+  color: #fdb724;
+  text-align: left;
+  font: 500 italic 16px "Montserrat", sans-serif;
+  position: absolute;
+  left: 16.09px;
+  top: 77px;
+  width: 173px;
+  height: 20px;
+}
+.icon-phone {
+  position: absolute;
+  left: 0px;
+  top: 83px;
+  overflow: visible;
+}
+.contato3 {
+  color: #fdb724;
+  text-align: left;
+  font: 600 18px "Montserrat", sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 87px;
+  height: 20px;
+}
+.logo-rodap {
+  width: 155.53px;
+  height: 103.17px;
+  position: static;
+}
+.logo {
+  position: absolute;
+  left: 208px;
+  top: 4351.11px;
+  overflow: visible;
+}
+.incept-design {
+  color: #fdb724;
+  text-align: left;
+  font: 500 italic 23px "Inter", sans-serif;
+  position: absolute;
+  left: 154px;
+  top: 4417px;
+  width: 153px;
+  height: 24px;
+}
+.bom-design-por-um-bom-motivo {
+  color: #fdb724;
+  text-align: left;
+  font: 400 10px "Inter", sans-serif;
+  position: absolute;
+  left: 153px;
+  top: 4442px;
+  width: 155.53px;
+  height: 12.28px;
+}
+.line-11 {
+  border-style: solid;
+  border-color: #fdb724;
+  border-width: 3px 0 0 0;
+  width: 1441.01px;
+  height: 0px;
+  position: absolute;
+  left: -1px;
+  top: 4268px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.quem-somos {
+  width: 454px;
+  height: 291px;
+  position: absolute;
+  left: 492px;
+  top: 3730px;
+}
+.rodrigo {
+  position: absolute;
+  inset: 0;
+}
+.designer-gr-fico {
+  color: #000000;
+  text-align: center;
+  font: 400 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 37px;
+  top: 273px;
+}
+.rodrigo-prates {
+  color: #1e1e1e;
+  text-align: center;
+  font: 400 20px "Montserrat", sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 248px;
+  width: 200px;
+  height: 25px;
+}
+.rectangle-50 {
+  background: #d9d9d9;
+  border-radius: 5px;
+  width: 134px;
+  height: 134px;
+  position: absolute;
+  left: 33px;
+  top: 83px;
+}
+.emily {
+  position: absolute;
+  inset: 0;
+}
+.programadora {
+  color: #000000;
+  text-align: center;
+  font: 400 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 299px;
+  top: 273px;
+}
+.emily-araujo {
+  color: #1e1e1e;
+  text-align: center;
+  font: 400 20px "Montserrat", sans-serif;
+  position: absolute;
+  left: 254px;
+  top: 248px;
+  width: 200px;
+  height: 25px;
+}
+.rectangle-51 {
+  background: #d9d9d9;
+  border-radius: 5px;
+  width: 134px;
+  height: 134px;
+  position: absolute;
+  left: 287px;
+  top: 83px;
+}
+.nossa-equipe {
+  color: #1e1e1e;
+  text-align: center;
+  font: 600 36px "Montserrat", sans-serif;
+  position: absolute;
+  left: 63px;
+  top: 0px;
+  width: 314px;
+  height: 38px;
+}
+.textura {
+  width: 1441px;
+  height: 1450px;
+  position: absolute;
+  left: -3px;
+  top: 1410px;
+}
+.planos {
+  width: 1440px;
+  height: 711px;
+  position: absolute;
+  left: 0px;
+  top: 2860px;
+}
+.rectangle-77 {
+  width: 1440px;
+  height: 711px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.completo {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-76 {
+  background: rgba(255, 255, 255, 0.04);
+  width: 214.28px;
+  height: 159.95px;
+  position: absolute;
+  left: 987.91px;
+  top: 288.56px;
+  backdrop-filter: blur(2px);
+}
+.rectangle-59 {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0px 20px 0px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 4px 0px 0px 0px;
+  width: 214.28px;
+  height: 94.9px;
+  position: absolute;
+  left: 987.91px;
+  top: 192.89px;
+  backdrop-filter: blur(2px);
+}
+.rectangle-60 {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px 10px 0px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 0px 0px 2px 0px;
+  width: 214.28px;
+  height: 68.57px;
+  position: absolute;
+  left: 987.91px;
+  top: 518.6px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, -1);
+  backdrop-filter: blur(2px);
+}
+.completo2 {
+  color: #ffffff;
+  text-align: center;
+  font: 600 25px "Montserrat", sans-serif;
+  position: absolute;
+  left: 1027px;
+  top: 214px;
+  width: 135px;
+  height: 29px;
+}
+.mensais {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 1070px;
+  top: 260px;
+}
+.r-1200-00 {
+  color: #ffffff;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 1051px;
+  top: 247px;
+  width: 90px;
+  height: 16px;
+}
+.sites-implementa-o-e-treinamento-cria-o-de-an-ncios-todas-as-redes-sociais-e-google-ads-vincula-o-dos-perfis-da-empresa-ao-site {
+  text-align: left;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 999px;
+  top: 314px;
+  width: 194px;
+  height: 124px;
+}
+.sites-implementa-o-e-treinamento-cria-o-de-an-ncios-todas-as-redes-sociais-e-google-ads-vincula-o-dos-perfis-da-empresa-ao-site-span {
+  color: #ffffff;
+  font: 400 13px "Montserrat", sans-serif;
+}
+.sites-implementa-o-e-treinamento-cria-o-de-an-ncios-todas-as-redes-sociais-e-google-ads-vincula-o-dos-perfis-da-empresa-ao-site-span2 {
+  color: linear-gradient(
+    180deg,
+    rgba(30, 30, 30, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  font: 400 13px "Montserrat", sans-serif;
+}
+.sites-implementa-o-e-treinamento-cria-o-de-an-ncios-todas-as-redes-sociais-e-google-ads-vincula-o-dos-perfis-da-empresa-ao-site-span3 {
+  color: linear-gradient(
+    180deg,
+    rgba(253, 183, 36, 1) 0%,
+    rgba(253, 183, 36, 0) 100%
+  );
+  font: 400 13px "Montserrat", sans-serif;
+}
+.ver-todos-os-benef-cios {
+  color: #ffffff;
+  text-align: center;
+  font: 600 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 1011px;
+  top: 473px;
+  width: 169px;
+  height: 21px;
+}
+.intermedi-rio {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-762 {
+  background: rgba(255, 255, 255, 0.04);
+  width: 214.28px;
+  height: 159.95px;
+  position: absolute;
+  left: 757.56px;
+  top: 288.56px;
+  backdrop-filter: blur(2px);
+}
+.rectangle-592 {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0px 20px 0px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 4px 0px 0px 0px;
+  width: 214.28px;
+  height: 94.9px;
+  position: absolute;
+  left: 757.56px;
+  top: 192.89px;
+  backdrop-filter: blur(2px);
+}
+.rectangle-602 {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px 10px 0px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 0px 0px 2px 0px;
+  width: 214.28px;
+  height: 68.57px;
+  position: absolute;
+  left: 757.56px;
+  top: 518.6px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, -1);
+  backdrop-filter: blur(2px);
+}
+.intermedi-rio2 {
+  color: #ffffff;
+  text-align: center;
+  font: 600 25px "Montserrat", sans-serif;
+  position: absolute;
+  left: 767px;
+  top: 214px;
+  width: 194px;
+  height: 29px;
+}
+.mensais2 {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 838px;
+  top: 260px;
+}
+.r-650-00 {
+  color: #ffffff;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 823px;
+  top: 246px;
+}
+.planejamento-mensal-de-conte-do-manuten-o-do-google-empresas-campanhas-de-marketing {
+  color: #ffffff;
+  text-align: left;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 769.04px;
+  top: 313.81px;
+  width: 198.21px;
+  height: 94.77px;
+}
+._1-an-ncio-mensal-facebook-e-instagram {
+  color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(30, 30, 30, 1) 100%
+  );
+  text-align: left;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 769px;
+  top: 392px;
+  width: 193px;
+  height: 38px;
+}
+.ver-todos-os-benef-cios2 {
+  color: #ffffff;
+  text-align: center;
+  font: 600 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 780px;
+  top: 473px;
+  width: 170px;
+  height: 21px;
+}
+.b-sico {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-763 {
+  background: rgba(255, 255, 255, 0.04);
+  width: 214.28px;
+  height: 159.95px;
+  position: absolute;
+  left: 527.2px;
+  top: 289.32px;
+  backdrop-filter: blur(2px);
+}
+.rectangle-593 {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0px 20px 0px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 4px 0px 0px 0px;
+  width: 214.28px;
+  height: 94.9px;
+  position: absolute;
+  left: 527.2px;
+  top: 193.66px;
+  backdrop-filter: blur(2px);
+}
+.rectangle-603 {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px 10px 0px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 0px 0px 2px 0px;
+  width: 214.28px;
+  height: 68.57px;
+  position: absolute;
+  left: 527.2px;
+  top: 519.37px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, -1);
+  backdrop-filter: blur(2px);
+}
+.b-sico2 {
+  color: #ffffff;
+  text-align: center;
+  font: 600 25px "Montserrat", sans-serif;
+  position: absolute;
+  left: 584px;
+  top: 214px;
+  width: 100px;
+  height: 29px;
+}
+.mensais3 {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 607.34px;
+  top: 260.25px;
+}
+.r-350-00 {
+  color: #ffffff;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 595.96px;
+  top: 245.71px;
+}
+.gerenciamento-completo-das-redes-sociais-cria-o-de-conte-do-social-media-1-an-ncio-mensal {
+  color: #ffffff;
+  text-align: left;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 538.68px;
+  top: 314.7px;
+  width: 198.21px;
+  height: 94.77px;
+}
+.reuni-es-mensais {
+  color: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  text-align: left;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 539px;
+  top: 394px;
+  width: 190px;
+  height: 21px;
+}
+.ver-todos-os-benef-cios3 {
+  color: #ffffff;
+  text-align: center;
+  font: 600 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 550px;
+  top: 473px;
+  width: 168px;
+  height: 21px;
+}
+.explicativo {
+  position: absolute;
+  inset: 0;
+}
+.oferecemos-planos-acessiveis-e-flex-veis {
+  color: #ffffff;
+  text-align: left;
+  font: 600 30px "Montserrat", sans-serif;
+  position: absolute;
+  left: 232.56px;
+  top: 228.1px;
+  width: 219.64px;
+  height: 136.99px;
+}
+.rectangle-75 {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px 0px 1px 0px;
+  width: 158px;
+  height: 20px;
+  position: absolute;
+  left: 233px;
+  top: 194px;
+}
+.planos-e-pre-os {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 236px;
+  top: 194px;
+  width: 151px;
+  height: 20px;
+}
+.galeria2 {
+  width: 1441px;
+  height: 582px;
+  position: absolute;
+  left: -3px;
+  top: 2228px;
+}
+.imagens {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-36 {
+  width: 135.59px;
+  height: 169.3px;
+  position: absolute;
+  left: 181px;
+  top: 328.53px;
+}
+.rectangle-35 {
+  width: 135.59px;
+  height: 135.59px;
+  position: absolute;
+  left: 749.41px;
+  top: 363.76px;
+}
+.rectangle-27 {
+  width: 135.59px;
+  height: 170.83px;
+  position: absolute;
+  left: 606.92px;
+  top: 170.72px;
+}
+.rectangle-34 {
+  width: 135.59px;
+  height: 136.36px;
+  position: absolute;
+  left: 606.92px;
+  top: 346.14px;
+}
+.rectangle-25 {
+  width: 135.59px;
+  height: 170.83px;
+  position: absolute;
+  left: 465.2px;
+  top: 187.57px;
+}
+.rectangle-372 {
+  width: 135.59px;
+  height: 169.3px;
+  position: absolute;
+  left: 749.41px;
+  top: 47.39px;
+}
+.rectangle-33 {
+  width: 135.59px;
+  height: 136.36px;
+  position: absolute;
+  left: 749.41px;
+  top: 222.04px;
+}
+.rectangle-26 {
+  width: 135.59px;
+  height: 135.59px;
+  position: absolute;
+  left: 606.92px;
+  top: 29px;
+}
+.rectangle-31 {
+  width: 135.59px;
+  height: 135.59px;
+  position: absolute;
+  left: 465.2px;
+  top: 363.76px;
+}
+.rectangle-24 {
+  width: 135.59px;
+  height: 170.83px;
+  position: absolute;
+  left: 323.49px;
+  top: 170.72px;
+}
+.rectangle-29 {
+  width: 135.59px;
+  height: 136.36px;
+  position: absolute;
+  left: 323.49px;
+  top: 346.14px;
+}
+.rectangle-23 {
+  width: 135.59px;
+  height: 135.59px;
+  position: absolute;
+  left: 181px;
+  top: 187.57px;
+}
+.rectangle-20 {
+  width: 135.59px;
+  height: 135.59px;
+  position: absolute;
+  left: 181px;
+  top: 45.85px;
+}
+.rectangle-202 {
+  width: 135.59px;
+  height: 135.59px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-22 {
+  width: 134.82px;
+  height: 135.59px;
+  position: absolute;
+  left: 465.2px;
+  top: 45.85px;
+}
+.rectangle-222 {
+  width: 134.82px;
+  height: 135.59px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-21 {
+  width: 135.59px;
+  height: 135.59px;
+  position: absolute;
+  left: 323.49px;
+  top: 29px;
+}
+.rectangle-212 {
+  width: 135.59px;
+  height: 135.59px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.confira-as-ultimas-cria-es-da-semana-e-portif-lio-criativo {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 995.68px;
+  top: 223px;
+  width: 219px;
+}
+.ante-titulo {
+  width: 212px;
+  height: 214px;
+  position: static;
+}
+.rectangle-752 {
+  background: #fdb724;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px 0px 1px 0px;
+  width: 115px;
+  height: 28px;
+  position: absolute;
+  left: 995.68px;
+  top: 124px;
+}
+.antes-de-ir {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 999.68px;
+  top: 129px;
+  width: 102px;
+  height: 18px;
+}
+.group-24 {
+  width: 212px;
+  height: 43px;
+  position: absolute;
+  left: 995.68px;
+  top: 295px;
+}
+.rectangle-78 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 2px;
+  width: 212px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.visitar {
+  color: #1e1e1e;
+  text-align: center;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 81.3px;
+  top: 13.29px;
+}
+.galeria3 {
+  color: #1e1e1e;
+  text-align: center;
+  font: 600 30px "Montserrat", sans-serif;
+  position: absolute;
+  left: 995.68px;
+  top: 174px;
+}
+.portifolio {
+  width: 1438px;
+  height: 769px;
+  position: absolute;
+  left: 0px;
+  top: 1410px;
+}
+.portifolio2 {
+  position: absolute;
+  inset: 0;
+}
+.categorias-dos-projetos {
+  width: 543.92px;
+  height: 34.97px;
+  position: static;
+}
+.desenvolvimento {
+  width: 176.65px;
+  height: 34.97px;
+  position: static;
+}
+.rectangle-42 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 2px;
+  width: 176.65px;
+  height: 34.97px;
+  position: absolute;
+  left: 698.35px;
+  top: 181.5px;
+}
+.desenvolvimento2 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 729.73px;
+  top: 191px;
+  width: 141.3px;
+  height: 17px;
+}
+.icon-code {
+  position: absolute;
+  left: 706px;
+  top: 193px;
+  overflow: visible;
+}
+.anuncios {
+  width: 106.47px;
+  height: 34.97px;
+  position: static;
+}
+.rectangle-422 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 2px;
+  width: 106.47px;
+  height: 34.97px;
+  position: absolute;
+  left: 880.88px;
+  top: 181.5px;
+}
+.anuncios2 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 907.56px;
+  top: 191px;
+}
+.icon-rocket {
+  position: absolute;
+  left: 890.21px;
+  top: 190.05px;
+  overflow: visible;
+}
+.todos-os-projetos {
+  width: 83.16px;
+  height: 34.97px;
+  position: static;
+}
+.rectangle-40 {
+  background: #1e1e1e;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 2px;
+  width: 83.16px;
+  height: 34.97px;
+  position: absolute;
+  left: 443.43px;
+  top: 181.5px;
+}
+.icon-star-outline {
+  position: absolute;
+  left: 450.43px;
+  top: 191.6px;
+  overflow: visible;
+}
+.design-criativo {
+  width: 160.88px;
+  height: 34.97px;
+  position: static;
+}
+.rectangle-41 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 2px;
+  width: 160.88px;
+  height: 34.97px;
+  position: absolute;
+  left: 532.03px;
+  top: 181.5px;
+}
+.desing-criativo {
+  color: #1e1e1e;
+  text-align: center;
+  font: 400 13px "Montserrat", sans-serif;
+  position: absolute;
+  left: 559.23px;
+  top: 190.83px;
+  width: 119.68px;
+  height: 17.1px;
+}
+.icon-design-nib {
+  width: 17.88px;
+  height: 17.88px;
+  position: static;
+}
+.clip-path-group {
+  width: 17.88px;
+  height: 17.88px;
+  position: static;
+}
+.clip-0-2585-14438 {
+  position: absolute;
+  left: 541.36px;
+  top: 190.05px;
+  overflow: visible;
+}
+.group4 {
+  position: absolute;
+  left: 543.53px;
+  top: 192.05px;
+  overflow: visible;
+}
+.frame-14 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 367.6px;
+  height: 53.62px;
+  position: absolute;
+  left: 531.26px;
+  top: 110px;
+}
+.projetos-recentes {
+  color: #1e1e1e;
+  text-align: center;
+  font: 600 40px "Montserrat", sans-serif;
+  position: relative;
+}
+.cards {
+  position: absolute;
+  inset: 0;
+}
+.trabalho-6 {
+  width: 176.42px;
+  height: 176.42px;
+  position: absolute;
+  left: 431.78px;
+  top: 261.55px;
+}
+.rectangle-67 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 176.42px;
+  height: 176.42px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.nome-do-trabalho {
+  color: #000000;
+  text-align: left;
+  font: 400 13px "Inter", sans-serif;
+  position: absolute;
+  left: 20.98px;
+  top: 129.01px;
+}
+.tipo {
+  color: #000000;
+  text-align: left;
+  font: 400 12px "Inter", sans-serif;
+  position: absolute;
+  left: 20.98px;
+  top: 143px;
+}
+.rectangle-74 {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 158.54px;
+  height: 158.54px;
+  position: absolute;
+  left: 8.55px;
+  top: 9.33px;
+}
+.trabalho-5 {
+  width: 176.42px;
+  height: 176.42px;
+  position: absolute;
+  left: 629.18px;
+  top: 261.55px;
+}
+.trabalho-4 {
+  width: 176.42px;
+  height: 176.42px;
+  position: absolute;
+  left: 826.58px;
+  top: 261.55px;
+}
+.trabalho-3 {
+  width: 176.42px;
+  height: 176.42px;
+  position: absolute;
+  left: 431px;
+  top: 454.29px;
+}
+.trabalho-2 {
+  width: 176.42px;
+  height: 176.42px;
+  position: absolute;
+  left: 628.4px;
+  top: 454.29px;
+}
+.trabalho-1 {
+  width: 176.42px;
+  height: 176.42px;
+  position: absolute;
+  left: 825.8px;
+  top: 454.29px;
+}
+.servi-os2 {
+  width: 1441px;
+  height: 529px;
+  position: absolute;
+  left: 0px;
+  top: 835px;
+}
+.o-que-fazemos {
+  position: absolute;
+  inset: 0;
+}
+.te-ajudamos-a-impulsionar-sua-marca-do-zero-ou-do-cinco-alcance-clientes-com-recursos-atuais-atrav-s-de-nossa-consultoria-online-e-completa {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 132px;
+  top: 272px;
+  width: 300px;
+  height: 106px;
+}
+.oferecemos-servi-os-criativos {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 30px "Montserrat", sans-serif;
+  position: absolute;
+  left: 134px;
+  top: 137px;
+  width: 339px;
+  height: 124px;
+}
+.rectangle-753 {
+  background: #fdb724;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px 0px 1px 0px;
+  width: 159px;
+  height: 27px;
+  position: absolute;
+  left: 132px;
+  top: 91px;
+}
+.o-que-fazemos2 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 139px;
+  top: 95px;
+  width: 140px;
+  height: 20px;
+}
+.marketing {
+  position: absolute;
+  inset: 0;
+}
+.marketing-digital {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 962px;
+  top: 292px;
+  width: 229px;
+  height: 19px;
+}
+.te-ajudamos-a-impulsionar-sua-marca-do-zero-alcance-clientes-com-recursos-atuais-consultoria-online-e-profissional {
+  color: #1e1e1e;
+  text-align: justified;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 962px;
+  top: 325px;
+  width: 295px;
+  height: 83px;
+}
+.web-design {
+  position: absolute;
+  inset: 0;
+}
+.web-design2 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 558px;
+  top: 294px;
+  width: 153px;
+  height: 19px;
+}
+.criamos-templates-intuitivos-personalizados-e-exclusivos-manter-sua-identidade-visual-nossa-prioridade {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 558px;
+  top: 327px;
+  width: 295px;
+  height: 83px;
+}
+.desenvolvimento3 {
+  position: absolute;
+  inset: 0;
+}
+.desenvolvimento-web {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 18px "Montserrat", sans-serif;
+  position: absolute;
+  left: 962px;
+  top: 91px;
+  width: 276px;
+  height: 20px;
+}
+.sites-institucionais-lojas-online-e-sistemas-de-gest-o-de-neg-cios-oferecemos-o-pacote-completo-para-que-sua-empresa-decole {
+  color: #1e1e1e;
+  text-align: justified;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 962px;
+  top: 121px;
+  width: 293px;
+  height: 68px;
+}
+.estrategia {
+  position: absolute;
+  inset: 0;
+}
+.estrategia2 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 18px "Montserrat", sans-serif;
+  position: absolute;
+  left: 558px;
+  top: 91px;
+  width: 140px;
+  height: 19px;
+}
+.design-criativo-e-inteligente-n-o-o-suficiente-preciso-complementa-lo-com-estrat-gia-e-t-cnicas-de-alcance {
+  color: #1e1e1e;
+  text-align: justified;
+  font: 400 14px "Montserrat", sans-serif;
+  position: absolute;
+  left: 558px;
+  top: 130px;
+  width: 255px;
+}
+.ler-mais {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 558px;
+  top: 211px;
+  width: 73px;
+  height: 19px;
+}
+.ler-mais2 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 962px;
+  top: 211px;
+  width: 73px;
+  height: 19px;
+}
+.ler-mais3 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 962px;
+  top: 398px;
+  width: 73px;
+  height: 19px;
+}
+.ler-mais4 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 15px "Montserrat", sans-serif;
+  position: absolute;
+  left: 558px;
+  top: 398px;
+  width: 73px;
+  height: 19px;
+}
+.icon-fast-arrow-right {
+  position: absolute;
+  left: 629px;
+  top: 217px;
+  overflow: visible;
+}
+.icon-fast-arrow-right2 {
+  position: absolute;
+  left: 1033px;
+  top: 217px;
+  overflow: visible;
+}
+.icon-fast-arrow-right3 {
+  position: absolute;
+  left: 1033px;
+  top: 404px;
+  overflow: visible;
+}
+.icon-fast-arrow-right4 {
+  position: absolute;
+  left: 629px;
+  top: 404px;
+  overflow: visible;
+}
+.codificacao-1-1 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 899px;
+  top: 91px;
+}
+.vetor-1 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 498px;
+  top: 294px;
+}
+.inspiracao-1 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 498px;
+  top: 91px;
+}
+.lancamento-1 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 899px;
+  top: 294px;
+}
+.navbar {
+  width: 1454px;
+  height: 776px;
+  position: absolute;
+  left: -9px;
+  top: 13px;
+}
+.rectangle-43 {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  width: 1454px;
+  height: 715px;
+  position: absolute;
+  left: 0px;
+  top: -13px;
+}
+.vector-1 {
+  position: absolute;
+  left: 0px;
+  top: -13px;
+  overflow: visible;
+}
+.titulo {
+  position: absolute;
+  inset: 0;
+}
+.somos-incept {
+  color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 56.25%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  text-align: center;
+  font: 400 88px "Aquus-Regular", sans-serif;
+  position: absolute;
+  left: 296px;
+  top: 293px;
+  width: 867px;
+  height: 89px;
+}
+.criativa-e-socialmente-consciente-somos-especializados-em-design-estrat-gico-e-empresarial {
+  color: #ffffff;
+  text-align: center;
+  font: 400 16px "Montserrat", sans-serif;
+  position: absolute;
+  left: 533px;
+  top: 425px;
+  width: 387px;
+  height: 56px;
+}
+.seta-deslize {
+  position: absolute;
+  left: 719.66px;
+  top: 626.96px;
+  overflow: visible;
+}
+.navegadores {
+  position: absolute;
+  inset: 0;
+}
+.frame-7 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 38.65px;
+  height: 38.65px;
+  position: absolute;
+  left: 744px;
+  top: 73px;
+}
+.in-cio {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px/30px "Montserrat", sans-serif;
+  position: relative;
+}
+.frame-8 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 64.93px;
+  height: 38.65px;
+  position: absolute;
+  left: 848.65px;
+  top: 74px;
+}
+.portif-lio2 {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px/30px "Montserrat", sans-serif;
+  position: relative;
+}
+.frame-9 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 57.2px;
+  height: 38.65px;
+  position: absolute;
+  left: 979.58px;
+  top: 73px;
+}
+.servi-os3 {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px/30px "Montserrat", sans-serif;
+  position: relative;
+}
+.frame-10 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 91.21px;
+  height: 38.65px;
+  position: absolute;
+  left: 1102.78px;
+  top: 73px;
+}
+.quem-somos2 {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px/30px "Montserrat", sans-serif;
+  position: relative;
+}
+.frame-11 {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 54.88px;
+  height: 38.65px;
+  position: absolute;
+  left: 1260px;
+  top: 73px;
+}
+.contato4 {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px/30px "Montserrat", sans-serif;
+  position: relative;
+}
+.deslize {
+  color: #ffffff;
+  text-align: center;
+  font: 400 30px "Aquus-Regular", sans-serif;
+  position: absolute;
+  left: 662px;
+  top: 576px;
+  width: 126px;
+  height: 33px;
+}
+.logo2 {
+  position: absolute;
+  left: 141.05px;
+  top: 71.46px;
+  overflow: visible;
+}
