@@ -1637,6 +1637,11 @@ index.css
   height: 52.46px;
   object-fit: cover;
 }
+
+.backgrounginit{
+background-image: url(img/capanavbar.png) !important;
+}
+
 .navbar {
   position: absolute;
   top: 13px;

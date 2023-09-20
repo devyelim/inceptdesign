@@ -45,10 +45,12 @@ body {
 
 /* Tela inicial */
 
-.background {
-  width: auto;
-  height: auto;
-  background-image: url('img/bk.jpg')
+.background-init{
+  background-image: url(img/capanavbar.png) !important;
+  }
+
+ul, li, a .padding-nav{
+  padding: 10px !important;
 }
 
 .somos-incept {
@@ -58,8 +60,9 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
   text-align: center;
-  font: 400 88px "Aquus-Regular", sans-serif;
+  font: 400 80px "Aquus-Regular", sans-serif;
   position: center;
+  max-height: max-content;
 }
 
 .cotitulo {
