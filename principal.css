@@ -46,21 +46,29 @@ body {
 /* Tela inicial */
 
 .background-init{
-  background-image: url(img/capanavbar.png) !important;
+  background-image: url(img/init.jpg) !important;
+  width: 50rem max-content;
   }
+
+.informativo{
+  text-align: center !important;
+  padding: 5rem;
+}
 
 ul, li, a .padding-nav{
   padding: 10px !important;
 }
 
 .somos-incept {
+  letter-spacing: 40px;
   color: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 56.25%,
     rgba(255, 255, 255, 0) 100%
-  );
-  text-align: center;
-  font: 400 80px "Aquus-Regular", sans-serif;
+  ) !important;
+  text-align: center !important;
+  font: 90px "Aquus-Regular", sans-serif !important;
+  padding-top: 8rem;
   position: center;
   max-height: max-content;
 }
@@ -74,15 +82,18 @@ nav, ul, li, a {
 .cotitulo {
   color: #ffffff;
   text-align: center;
-  font: 400 16px "Montserrat", sans-serif;
+  font: 250 16px "Montserrat", sans-serif;
   position: center;
+  padding-top: 25px;
+  width: 400px;
 }
 
 .deslize {
   color: #ffffff;
   text-align: center;
-  font: 30px "Aquus-Regular", sans-serif;
+  font: 35px "Aquus-Regular", sans-serif;
   align-items: bottom !important;
+  padding-top: inherit
 }
 
 /*
@@ -182,4 +193,11 @@ nav, ul, li, a {
     }
   }
 
-  
+  #navbar {
+  background-color: transparent !important;
+  transition:all .8s ease-in-out;
+  }
+
+  .scroll {
+  background-color: white !important;
+  }
