@@ -64,6 +64,12 @@ ul, li, a .padding-nav{
   position: center;
   max-height: max-content;
 }
+nav, ul, li, a {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px/30px "Montserrat", sans-serif;
+  position: relative;
+}
 
 .cotitulo {
   color: #ffffff;
@@ -76,7 +82,7 @@ ul, li, a .padding-nav{
   color: #ffffff;
   text-align: center;
   font: 30px "Aquus-Regular", sans-serif;
-  position: center;
+  align-items: bottom !important;
 }
 
 /*
@@ -175,3 +181,5 @@ ul, li, a .padding-nav{
       max-width: 100%;
     }
   }
+
+  
