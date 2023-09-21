@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #fff;
 }
 
 body {
@@ -45,10 +45,13 @@ body {
 
 /* Tela inicial */
 
+.bksize{
+  height: 100vh !important;
+}
+
 .background-init{
   background-image: url(img/init.jpg) !important;
-  width: 50rem max-content;
-  }
+}
 
 .informativo{
   text-align: center !important;
@@ -59,8 +62,16 @@ ul, li, a .padding-nav{
   padding: 10px !important;
 }
 
+
+nav, ul, li, a {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px/30px "Montserrat", sans-serif;
+  position: relative;
+}
+
 .somos-incept {
-  letter-spacing: 40px;
+  letter-spacing: 2rem;
   color: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 56.25%,
@@ -69,23 +80,14 @@ ul, li, a .padding-nav{
   text-align: center !important;
   font: 90px "Aquus-Regular", sans-serif !important;
   padding-top: 8rem;
-  position: center;
-  max-height: max-content;
-}
-nav, ul, li, a {
-  color: #ffffff;
-  text-align: center;
-  font: 300 13px/30px "Montserrat", sans-serif;
-  position: relative;
 }
 
 .cotitulo {
   color: #ffffff;
-  text-align: center;
+  text-align: center !important;
   font: 250 16px "Montserrat", sans-serif;
-  position: center;
-  padding-top: 25px;
-  width: 400px;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 .deslize {
@@ -93,7 +95,7 @@ nav, ul, li, a {
   text-align: center;
   font: 35px "Aquus-Regular", sans-serif;
   align-items: bottom !important;
-  padding-top: inherit
+  padding-top: 20px;
 }
 
 /*
