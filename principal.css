@@ -45,6 +45,20 @@ body {
 
 /* Tela inicial */
 
+
+
+ul, li, a .padding-nav{
+  padding: 10px !important;
+}
+
+
+#navbar ul li a {
+  color: #ffffff;
+  text-align: center;
+  font: 300 13px/30px "Montserrat", sans-serif;
+  position: relative;
+}
+
 .bksize{
   height: 100vh !important;
 }
@@ -56,18 +70,6 @@ body {
 .informativo{
   text-align: center !important;
   padding: 5rem;
-}
-
-ul, li, a .padding-nav{
-  padding: 10px !important;
-}
-
-
-nav, ul, li, a {
-  color: #ffffff;
-  text-align: center;
-  font: 300 13px/30px "Montserrat", sans-serif;
-  position: relative;
 }
 
 .somos-incept {
@@ -97,6 +99,34 @@ nav, ul, li, a {
   align-items: bottom !important;
   padding-top: 20px;
 }
+
+.temaclaro {
+  color: #333 !important;
+}
+
+.temaclaro a {
+  color: #333 !important;
+}
+
+.temaescuro {
+  color: #fff !important;
+}
+
+/* .projeto-size {
+  align-items: center !important;
+  width: 350px !important;
+  height: 350px !important;
+} */
+
+.projet-center{
+  margin: 4vh !important;
+}
+
+.espaco-vertical {
+  height: 4vh !important;
+}
+
+
 
 /*
  * Header
