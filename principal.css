@@ -126,6 +126,12 @@ ul, li, a .padding-nav{
   height: 4vh !important;
 }
 
+.planosstyle {
+  width: 280px !important; 
+  margin-right: 10px !important;
+  padding: 5px;
+}
+
 
 
 /*
