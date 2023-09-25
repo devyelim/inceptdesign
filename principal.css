@@ -132,6 +132,11 @@ ul, li, a .padding-nav{
   padding: 5px;
 }
 
+.planosbk{
+  background-image: url(img/servicos.png) !important;
+  /* height: 710px !important; */
+  
+}
 
 
 /*
