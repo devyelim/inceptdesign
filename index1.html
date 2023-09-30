@@ -21,25 +21,32 @@
 
     <!-- Jquery 5.2 -->
     <link rel="stylesheet" href="index.js">
-
-    <!-- Icones Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Masony -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    
     <script>
       $(function() {
-    $(window).on("scroll", function() {
-       if($(window).scrollTop() > 280) {
-           //background on scroll
-           $("#navbar").addClass("scroll");
-       } else {
-           //background at top
-          $("#navbar").removeClass("scroll");
-       }
-     });
-   });
+        $(window).on("scroll", function() {
+          if($(window).scrollTop() > 280) {
+              //background on scroll
+              $("#navbar").addClass("scroll");
+          } else {
+              //background at top
+              $("#navbar").removeClass("scroll");
+          }
+        });
+      });
     </script>
 
     <title>Incept Desing</title>
@@ -122,6 +129,7 @@
           <div
             class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div> -->
+
         <div id="Serviços" class="container temaclaro">
           <div class="row flex-lg-row align-items-center g-5 py-5">
 
@@ -233,8 +241,8 @@
           </div>
         </div>
 
-        <div id="Potifolio" class="textura">
-          <div class="container text-center temaclaro">
+        <div class="textura">
+          <div id="Potifolio" class="container text-center temaclaro">
             <div class="px-4 pt-5 my-5 text-center border-bottom">
               <h1 class="display-4 fw-bold">PROJETOS RECENTES</h1>
 
@@ -285,9 +293,192 @@
           </div>
 
           <!--  -->
-          <div class="espaco-vertical"></div>            
-        
-          <!-- GALERIA AQUI -->
+          <div class="espaco-vertical"></div> 
+
+          <!-- <div id="Galeria" class="container">
+              <div class="row">
+                  
+                  
+                  <div class="col-sm-2 col-md-2 col-lg-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2 col-md-2 col-lg-2 custom-offset">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2 col-md-2 col-lg-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2 col-md-2 col-lg-2 custom-offset">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2 col-md-2 col-lg-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>                  
+                  
+                  <div class="col-sm-2">                    
+                  </div>                 
+                  <div class="col-sm-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2 custom-offset">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2 custom-offset">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>                  
+                 
+                  <div class="col-sm-2">                    
+                  </div>
+                  <div class="col-sm-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2 custom-offset">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+                  <div class="col-sm-2 custom-offset">
+                      <img src="img/exemploprojeto.png" class="img-fluid">
+                  </div>
+              </div>
+          </div> -->
+
+          <div id="Galeria" class="container">  
+
+            <div class="row temaclaro" data-masonry='{"percentPosition": true }'>
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="custom-offset col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="custom-offset col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifoliovari img-fluid" alt="...">
+                </div>
+              </div>
+
+             
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifoliovari img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">               
+                  <img src="img/exemploprojeto.png" class="cardsportifoliovari img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="custom-offset col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">                             
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="custom-offset col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifoliovari img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifoliovari img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="custom-offset col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="custom-offset col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-2 mb-1 p-1">
+                <div class="card text-center">
+                  <img src="img/exemploprojeto.png" class="cardsportifolio img-fluid" alt="...">
+                </div>
+              </div>              
+            </div>
+
+          </div>
+          
+          <!-- <div class="container">
+            <div class="galeria2">
+              <div class="imagens">
+                <img class="rectangle-36" src="img/exemploprojeto.png"/>
+                <img class="rectangle-35" src="img/exemploprojeto.png"/>
+                <img class="rectangle-27" src="img/exemploprojeto.png"/>
+                <img class="rectangle-34" src="img/exemploprojeto.png"/>
+                <img class="rectangle-25" src="img/exemploprojeto.png"/>
+                <img class="rectangle-372" src="img/exemploprojeto.png"/>
+                <img class="rectangle-33" src="img/exemploprojeto.png"/>
+                <img class="rectangle-26" src="img/exemploprojeto.png"/>
+                <img class="rectangle-31" src="img/exemploprojeto.png"/>
+                <img class="rectangle-24" src="img/exemploprojeto.png"/>
+                <img class="rectangle-29" src="img/exemploprojeto.png"/>
+                <img class="rectangle-23" src="img/exemploprojeto.png"/>
+                <div class="rectangle-20">
+                  <img class="rectangle-202" src="img/exemploprojeto.png"/>
+                </div>
+                <div class="rectangle-22">
+                  <img class="rectangle-222" src="img/exemploprojeto.png"/>
+                </div>
+                <div class="rectangle-21">
+                  <img class="rectangle-212" src="img/exemploprojeto.png"/>
+                </div>
+              </div>
+              <div class="explicativo">
+                <div class="confira-as-ultimas-cria-es-da-semana-e-portif-lio-criativo">
+                  Confira as ultimas criações da semana e portifólio criativo.
+                </div>
+                <div class="ante-titulo">
+                  <div class="rectangle-752"></div>
+                  <div class="antes-de-ir">ANTES DE IR</div>
+                  <div class="group-24">
+                    <div class="rectangle-78"></div>
+                    <div class="visitar">VISITAR</div>
+                  </div>
+                </div>
+                <div class="galeria3">GALERIA</div>
+              </div>
+            </div>
+          </div> -->
+
         </div>
 
         <div class="espaco-vertical"></div>

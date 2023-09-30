@@ -99,6 +99,9 @@ ul, li, a .padding-nav{
 }
 
 
+.espaco-vertical {
+  height: 4vh !important;
+}
 
 .temaclaro {
   color: #333 !important;
@@ -112,18 +115,18 @@ ul, li, a .padding-nav{
   color: #fff !important;
 }
 
-/* .projeto-size {
-  align-items: center !important;
-  width: 350px !important;
-  height: 350px !important;
-} */
-
 .projet-center{
   margin: 4vh !important;
 }
 
-.espaco-vertical {
-  height: 4vh !important;
+.cardsportifolio {
+  width: 177px !important;
+  height: 177px !important;
+}
+
+.cardsportifoliovari {
+  width: 177px !important;
+  height: 223px !important;
 }
 
 .planosstyle {
@@ -146,9 +149,20 @@ margin-bottom: 0rem !important;
   
 }
 
+/* Aplica um deslocamento vertical de 20px nas colunas 2 e 4 */
+.custom-offset {
+  position: relative;
+  margin-top: -20px !important;
+}
+
 .quemsomosstyle{
   margin: 30px 30px 0 0;
 }
+
+
+
+
+
 
 /*
  * Header
