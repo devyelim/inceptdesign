@@ -42,6 +42,65 @@ body {
   max-width: 42em;
 }
 
+/* Classes Globais Personalizadas */
+
+.titulos {
+  color: #1E1E1E;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subtitulos {
+  color: #1E1E1E;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.titulo-left {
+  text-align: left !important;
+  color: #1E1E1E;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subtitulo-left {
+  text-align: left !important;
+  color: #1E1E1E;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.espaco-vertical {
+  height: 4vh !important;
+}
+
+.temaclaro {
+  color: #333 !important;
+}
+
+.temaclaro a {
+  color: #333 !important;
+}
+
+.temaescuro {
+  color: #fff !important;
+}
+
+
 
 /* Tela inicial */
 
@@ -86,7 +145,7 @@ ul, li, a .padding-nav{
 }
 
 .informativo{
-  text-align: center !important;
+  text-align: left !important;
   padding: 5rem;
 }
 
@@ -98,36 +157,42 @@ ul, li, a .padding-nav{
   padding: 2rem;
 }
 
-
-.espaco-vertical {
-  height: 4vh !important;
-}
-
-.temaclaro {
-  color: #333 !important;
-}
-
-.temaclaro a {
-  color: #333 !important;
-}
-
-.temaescuro {
-  color: #fff !important;
-}
-
 .projet-center{
   margin: 4vh !important;
 }
 
-.cardsportifolio {
+/* Portifolio */
+
+.textura{
+  background-image: url("img/textura.png");
+}
+
+.projeto-size {
   width: 177px !important;
   height: 177px !important;
 }
 
-.cardsportifoliovari {
+.portifolio-costum {
+  max-width: 600px !important;
+}
+
+
+/* Galeria */
+
+.cardsgaleria {
+  width: 177px !important;
+  height: 177px !important;
+}
+
+.cardsgaleriavari {
   width: 177px !important;
   height: 223px !important;
 }
+
+
+
+
+/* Planos */
 
 .planosstyle {
   min-width: 280px !important; 
@@ -154,6 +219,8 @@ margin-bottom: 0rem !important;
   position: relative;
   margin-top: -20px !important;
 }
+
+
 
 .quemsomosstyle{
   margin: 30px 30px 0 0;
