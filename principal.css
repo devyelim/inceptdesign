@@ -252,8 +252,25 @@ ul, li, a .padding-nav{
   height: 223px !important;
 }
 
+.galeria {
+  color: #2C2B2B;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 20px;
+}
 
-
+.galeriasubtitulos {
+  color: #2C2B2B;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 20px;
+}
 
 /* Planos */
 
@@ -340,7 +357,7 @@ margin-bottom: 0rem !important;
 /* Quem Somos */
 
 .quemsomos{
-  height: 500px;
+  /* height: 500px; */
 }
 
 
@@ -356,20 +373,30 @@ margin-bottom: 0rem !important;
 
 /* Rodapé */
 
+i{
+  padding-right: 10px !important;
+}
+
 .rodapestyle {
-  background-color: #2C2B2B;
-  color: #FDB724 !important;
+  /* background-color: #2C2B2B; */
+  background-color: #1B5A5F;
+  /* color: #FDB724 !important; */
+  color: #ffffff !important;
+}
+
+.rodapestyle ul{
+  padding: 0px !important;
+}
+
+.rodapestyle ul li {
+  padding: 0px !important;
 }
 
 .rodapestyle ul li a{
-  color: #FDB724 !important;
-  margin-bottom: 1rem !important;
+  /* color: #FDB724 !important; */
+  color:#ffffff !important;
+  /* margin-bottom: 1rem !important; */
 }
-
-/* .rodapestyle ul li a i{
-  width: 25px !important;
-  height: 30px !important;
-} */
 
 .rodapestyle ul h5 {
   margin-bottom: 1.5rem !important;
