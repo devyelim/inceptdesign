@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="personalizados.css">
 
+    <!-- JS PErsolalizado -->
+    <script defer src="index.js"></script>
+
     <!-- Jquery 5.2 -->
     <link rel="stylesheet" href="index.js">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -34,20 +37,6 @@
 
     <!-- Masony -->
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-    
-    <script>
-      $(function() {
-        $(window).on("scroll", function() {
-          if($(window).scrollTop() > 280) {
-              //background on scroll
-              $("#navbar").addClass("scroll");
-          } else {
-              //background at top
-              $("#navbar").removeClass("scroll");
-          }
-        });
-      });
-    </script>
 
     <title>Incept Desing</title>
   </head>
@@ -55,120 +44,127 @@
   <body>
     <div class="container-fluid mx-auto flex-column" style="padding: 0px !important;">
       <!-- Navbar responsivo em escala lg -->
-      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent mb-4" aria-label="Navbar" style="padding: 15px !important;">
-        <div class="container">
-          <a id="logo" class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="Incept">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample07" aria-controls="navbarsExample07"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="align-items-end collapse navbar-collapse"
-            id="navbarsExample07" style="flex-grow: 0 !important;">
-            <ul class="padding-nav navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portifolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Quem somos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#"
-                  data-bs-toggle="dropdown" aria-expanded="false">Contato</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Instagram</a></li>
-                  <li><a class="dropdown-item" href="#">Facebook</a></li>
-                  <li><a class="dropdown-item" href="#">Whatsapp</a></li>
-                </ul>
-              </li>
-            </ul>
+        <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent mb-4" aria-label="Navbar">
+          <div class="container">
+            <a id="logo" class="navbar-brand" href="#">
+              <img src="img/incept-ligth.png" alt="Incept Design">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample07" aria-controls="navbarsExample07"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-items-end collapse navbar-collapse"
+              id="navbarsExample07" style="flex-grow: 0 !important;">
+              <ul id="ulnav" class="padding-nav navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Portifolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active">Quem somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#"
+                    data-bs-toggle="dropdown" aria-expanded="false">Contato</a>
+                  <ul id="dropnav" class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Instagram</a></li>
+                    <li><a class="dropdown-item" href="#">Facebook</a></li>
+                    <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-
+        </nav>
+      
       <main>
+
         <!-- Capa inicial, tambem em escala lg e backgroung responsivo -->        
-        <div id="Inicio" class="temaescuro bksize text-center background-init img-fluid cover py-lg-10 hcf-bp-center hcf-bs-cover hcf-overlay">
-          <div class="px-4 pt-5 my-5 text-center">
-            <h1 class="display-1 somos-incept">Somos Incept</h1>
+        <div id="Inicio" class="herobk temaescuro text-center img-fluid cover py-lg-10 hcf-bp-center hcf-bs-cover hcf-overlay">
+          <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-2 somos-incept">Somos Incept</h1>
             <div class="col-lg-4 mx-auto">
               <p class="lead mb-4">Criativa e socialmente consciente, 
                 somos especializados em design estratégico e empresarial.</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <p class="deslize">DESLIZE</p>
-              </div>
             </div>          
           </div>
+          <div class="mt-5 pt-5">
+            <p class="deslize">DESLIZE</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="194" fill="none" viewBox="0 0 16 194">
+              <circle cx="8" cy="7" r="6.1" stroke="#fff" stroke-width="1.8"/>
+              <path class="seta" fill="#fff" d="M7.293 193.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 1 0-1.414-1.414L8 191.586l-5.657-5.657a1 1 0 1 0-1.414 1.414l6.364 6.364ZM7 14v179h2V14H7Z"/>
+            </svg>
+          </div>            
         </div>
-     
 
-        <div id="Serviços" class="container temaclaro" style="margin: 8rem auto 4rem auto !important;">
-          <div class="row flex-lg-row g-5 mt-5">
-            <div class="col-lg-3 mt-1">
-              <p>O QUE FAZEMOS?</p>
-              <h2 class="titulo-left"> OFERECEMOS SERVIÇOS
-                CRIATIVOS</h2>
-              <p class="subtitulo-left">Te ajudamos a impulsionar sua marca do zero (ou
-                do cinco). <br>Alcance clientes com recursos atuais através de
-                nossa consultoria online e completa.</p>              
-            </div>
-            <div class=" col-lg-9 col-sm-10 col-9" style="margin: 0px !important;">
-              <div class="text-justify">
-                <div class="row">
-                  <div class="col-6 col-sm-6 d-flex align-items-start mb-6 pl-4">
-                    <img src="img/inspiracao.png" class="imgservicos">
-                    <div class="pl-2">
-                      <h5>ESTRATÉGIA</h5>
-                      <p class="descricaoservicos">Design criativo e inteligente não é o suficiente. 
-                        É preciso complementa-lo com estratégia e técnicas de alcance!
-                      </p>
-                      <a class="fw-bold">Ler mais!</a>
+        <section class="container-fluid">
+           <div id="Serviços" class="container temaclaro" style="margin: 8rem auto 4rem auto !important;">
+            <div class="row flex-lg-row g-5 mt-5">
+              <div class="col-lg-3 p-4 m-0">
+                <p>O QUE FAZEMOS?</p>
+                <h2 class="titulo-left"> OFERECEMOS SERVIÇOS CRIATIVOS</h2>
+                <p class="subtitulo-left">Te ajudamos a impulsionar sua marca do zero (ou
+                  do cinco). <br>Alcance clientes com recursos atuais através de
+                  nossa consultoria online e completa.</p>
+              </div>
+              <div class=" col-lg-9 col-sm-10 col-9" style="margin: 0px !important;">
+                <div class="text-justify">
+                  <div class="row">
+                    <div class="col col-md-6 d-flex align-items-start p-3">
+                      <img src="img/inspiracao.png" class="imgservicos">
+                      <div class="pl-2">
+                        <h5>ESTRATÉGIA</h5>
+                        <p class="descricaoservicos">Design criativo e inteligente não é o suficiente. 
+                          É preciso complementa-lo com estratégia e técnicas de alcance!
+                        </p>
+                        <a class="fw-bold">Ler mais!</a>
+                      </div>
                     </div>
+                    <div class="col col-md-6 d-flex align-items-start p-3">
+                      <img src="img/codificacao.png" class="imgservicos">
+                      <div class="pl-2">
+                        <h5>DESENVOLVIMENTO</h5>
+                        <p class="descricaoservicos">Sites institucionais, lojas online e sistemas de Gestão de Negócios. 
+                          Oferecemos o pacote completo para que sua empresa decole.
+                        </p>
+                        <a class="fw-bold">Ler mais!</a>
+                      </div>
+                    </div>
+                    <div class="col col-md-6 d-flex align-items-start p-3">
+                      <img src="img/vetor.png" class="imgservicos">
+                      <div class="pl-2">
+                        <h5>WEB DESING</h5>
+                        <p class="descricaoservicos">Criamos templates intuitivos, personalizados e exclusivos. 
+                          Manter sua Identidade Visual é nossa especialidade, assim como deixar sua marca ainda mais atrativa.
+                        </p>
+                        <a class="fw-bold">Ler mais!</a>
+                      </div>
+                    </div>
+                    <div class="col col-md-6 d-flex align-items-start p-3">
+                      <img src="img/lancamento.png" class="imgservicos">
+                      <div class="pl-2">
+                        <h5>MARKETING DIGITAL</h5>
+                        <p class="descricaoservicos">Te ajudamos a impulsionar sua marca do zero. 
+                          Alcance clientes com recursos atuais, consultoria online e profissional.
+                        </p>
+                        <a class="fw-bold">Ler mais!</a>
+                      </div>
+                    </div>                              
                   </div>
-                  <div class="col-6 col-sm-6 d-flex align-items-start mb-6 pl-4">
-                    <img src="img/codificacao.png" class="imgservicos">
-                    <div class="pl-2">
-                      <h5>DESENVOLVIMENTO</h5>
-                      <p class="descricaoservicos">Sites institucionais, lojas online e sistemas de Gestão de Negócios. 
-                        Oferecemos o pacote completo para que sua empresa decole.
-                      </p>
-                      <a class="fw-bold">Ler mais!</a>
-                    </div>
-                  </div>
-                  <div class="col-6 col-sm-6 d-flex align-items-start mb-6 pl-4">
-                    <img src="img/vetor.png" class="imgservicos">
-                    <div class="pl-2">
-                      <h5>WEB DESING</h5>
-                      <p class="descricaoservicos">Criamos templates intuitivos, personalizados e exclusivos. 
-                        Manter sua Identidade Visual é nossa especialidade, assim como deixar sua marca ainda mais atrativa.
-                      </p>
-                      <a class="fw-bold">Ler mais!</a>
-                    </div>
-                  </div>
-                  <div class="col-6 col-sm-6 d-flex align-items-start mb-6 pl-4">
-                    <img src="img/lancamento.png" class="imgservicos">
-                    <div class="pl-2">
-                      <h5>MARKETING DIGITAL</h5>
-                      <p class="descricaoservicos">Te ajudamos a impulsionar sua marca do zero. 
-                        Alcance clientes com recursos atuais, consultoria online e profissional.
-                      </p>
-                      <a class="fw-bold">Ler mais!</a>
-                    </div>
-                  </div>                              
-                </div>
-              </div>              
+                </div>              
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+       
 
         <section id="Potifolio" class="textura container-fluid img-fluid cover py-lg-2 hcf-bp-center hcf-bs-cover">
           <div class="container text-center temaclaro">

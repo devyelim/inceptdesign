@@ -19,6 +19,13 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+.cores {
+  color: #FDB724;
+  color: #1B5A5F;
+  color: #2C2B2B;
+  color: #1E1E1E;
+  color: #ffffff;
+}
 
 /*
  * Estrutura basica
@@ -34,77 +41,162 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
+  font-family: Montserrat;
 }
+
 
 /* Classes Globais Personalizadas */
 
-.titulos {
-  color: #1E1E1E;
+  .titulos {
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .subtitulos {
+    color: #1E1E1E;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .titulo-left {
+    text-align: left !important;
+    color: #1E1E1E;
+    /* text-align: center; */
+    font-family: Montserrat;
+    /* font-size: 40px; */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .subtitulo-left {
+    text-align: left !important;
+    color: #1E1E1E;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .explicativo-planos{
+    margin-right: 20px;
+    max-width: 309px !important;
+    height: 179px;
+    flex-shrink: 0;
+  }
+
+  .oferecemosservicos {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 20px;
+  }
+
+
+/* Navbar */
+
+nav {
+  margin-inline: auto !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center; 
+  height: auto !important;
+  padding: 30px !important;
+}
+
+nav ul li a{
+  color: #FFF;
   text-align: center;
   font-family: Montserrat;
-  font-size: 40px;
+  font-size: 13px !important;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 200;
+  line-height: 30px; /* 200% */
+  letter-spacing: 1.875px;
 }
 
-.subtitulos {
-  color: #1E1E1E;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+#ulnav li a{
+  transition: .3s;
+  display: block;
+  position: relative;
+  padding: 0px 8px;
+  margin: 5px;
 }
 
-.titulo-left {
-  text-align: left !important;
-  color: #1E1E1E;
-  /* text-align: center; */
-  font-family: Montserrat;
-  /* font-size: 40px; */
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+/* #ulnav:hover li a{
+  opacity: 0.7;
+} */
+
+#ulnav li a:hover{
+  opacity: 1;
+  transform: scale(1.1);
+  color: #FDB724;
 }
 
-.subtitulo-left {
-  text-align: left !important;
-  color: #1E1E1E;
-  font-family: Montserrat;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+#ulnav li a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1eea;
+  z-index: -1;
+  transform-origin: right;
+  transform: scaleX(0);
+  border-radius: 3px;
+  transition: .4s;
 }
 
-.explicativo-planos{
-  margin-right: 20px;
-  max-width: 309px !important;
-  height: 179px;
-  flex-shrink: 0;
+#ulnav li a:hover::before{
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform .4s;
 }
 
-.oferecemosservicos {
-  color: #FFF;
-  font-family: Montserrat;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding-bottom: 20px;
+nav.rolagem {
+  background-color: #fff !important;
+  transition: ease-in-out 0.4s;
+  padding: 0px !important;
+  box-shadow: 0px 0px 5px 0px #2c2b2b5e;
 }
+
+nav.rolagem ul li a{
+  color: #2C2B2B !important;
+  padding-block: 10px;
+}
+
+/* nav.navbar-toggler::before{
+  background-color: #fff !important;
+  transition: ease-in-out 0.4s;
+  padding: 5px !important;
+}
+
+nav.navbar-toggler::before ul li a{
+  color: #2C2B2B !important;
+} */
+
 
 
 /* Tela Inicial */
 
-.bksize{
+.herobk{
   height: 100vh !important;
+  background-image: url('img/init.jpg') !important;
 }
 
-.background-init{
-  background-image: url(img/init.jpg) !important;
-}
 
 .somos-incept {
   background: linear-gradient(180deg, #FFF 56.25%, rgba(255, 255, 255, 0.00) 100%);
@@ -114,11 +206,9 @@ body {
   mix-blend-mode: difference;
   text-align: center !important;
   font-family: Aquus-Regular;
-  /* font-size: 96px; */
   font-style: normal;
-  /* font-weight: 400; */
   line-height: normal;
-  letter-spacing: 40.8px;
+  letter-spacing: 30px;
 }
 
 .deslize {
@@ -126,8 +216,14 @@ body {
   text-align: center;
   font: 35px "Aquus-Regular", sans-serif;
   align-items: bottom !important;
-  padding-top: 20px;
+  letter-spacing: 4px;
 }
+
+.seta{
+  mix-blend-mode: difference !important;
+}
+
+
 
 .informativo{
   text-align: left !important;
