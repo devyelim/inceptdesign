@@ -1,4 +1,5 @@
 
+
 // Navbar Scroll
 
 window.addEventListener("scroll", function(){
@@ -36,110 +37,71 @@ const my0bserver = new IntersectionObserver((entries) => {
 
 const elements = document.querySelectorAll('.ocult')
 
-elements.forEach( (element) => my0bserver.observe(element))
+// elements.forEach( (element) => my0bserver.observe(element))
 
 
+// var onda1 = document.getElementById('onda1')
+// var onda2 = document.getElementById('onda2')
+// var onda3 = document.getElementById('onda3')
+// var onda4 = document.getElementById('onda4')
 
-(function ($) {
-  "use strict";
-  
-  // Dropdown on mouse hover
-  $(document).ready(function () {
-      function toggleNavbarMethod() {
-          if ($(window).width() > 992) {
-              $('.navbar .dropdown').on('mouseover', function () {
-                  $('.dropdown-toggle', this).trigger('click');
-              }).on('mouseout', function () {
-                  $('.dropdown-toggle', this).trigger('click').blur();
-              });
-          } else {
-              $('.navbar .dropdown').off('mouseover').off('mouseout');
-          }
-      }
-      toggleNavbarMethod();
-      $(window).resize(toggleNavbarMethod);
-  });
-  
-  
-  // Back to top button
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-          $('.back-to-top').fadeIn('slow');
-      } else {
-          $('.back-to-top').fadeOut('slow');
-      }
-  });
-  $('.back-to-top').click(function () {
-      $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-      return false;
-  });
+let trilho = document.getElementById('trilho')
+let body = document.querySelector('body')
+let footer = document.querySelector('footer')
+
+trilho.addEventListener('click',()=>{
+  trilho.classList.toggle('dark-mode')
+  body.classList.toggle('dark-mode')
+  footer.classList.toggle('dark-mode')
+  sol.classList.toggle('dark-mode')
+})
 
 
-  // Portfolio isotope and filter
-  var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
-  });
-  $('#portfolio-flters li').on('click', function () {
-      $("#portfolio-flters li").removeClass('active');
-      $(this).addClass('active');
+// Revelar ao Scrollar
 
-      portfolioIsotope.isotope({filter: $(this).data('filter')});
-  });
+window.revelar = ScrollReveal({reset:true})
 
+// Topo do Site
 
-  // Team carousel
-  $(".team-carousel").owlCarousel({
-      autoplay: true,
-      smartSpeed: 1000,
-      margin: 30,
-      dots: false,
-      loop: true,
-      nav : true,
-      navText : [
-          '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-          '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-      ],
-      responsive: {
-          0:{
-              items:1
-          },
-          576:{
-              items:1
-          },
-          768:{
-              items:2
-          },
-          992:{
-              items:3
-          }
-      }
-  });
+revelar.reveal('.nocturne', {
+  duration: 1000,
+  distance: '90px'
+})
 
 
-  // Testimonials carousel
-  $(".testimonial-carousel").owlCarousel({
-      autoplay: true,
-      smartSpeed: 1500,
-      margin: 30,
-      dots: true,
-      loop: true,
-      center: true,
-      responsive: {
-          0:{
-              items:1
-          },
-          576:{
-              items:1
-          },
-          768:{
-              items:2
-          },
-          992:{
-              items:3
-          }
-      }
-  });
-  
-})(jQuery);
+// Efeito Cards de produtos
 
+revelar.reveal('.efeito-card1', {
+  duration: 2000,
+  distance: '90px',
+  delay: 500
+})
+
+revelar.reveal('.efeito-card2', {
+  duration: 2000,
+  distance: '90px',
+  delay: 1000
+})
+
+revelar.reveal('.efeito-card3', {
+  duration: 2000,
+  distance: '90px',
+  delay: 1500
+})
+
+
+// Efeito surgir das laterais
+
+revelar.reveal('.esquerda-direita', {
+  duration: 1000,
+  distance: '90px',
+  delay: 500,
+  origin: 'left'
+})
+
+revelar.reveal('.direita-esquerda', {
+  duration: 1000,
+  distance: '90px',
+  delay: 600,
+  origin: 'right'
+})
