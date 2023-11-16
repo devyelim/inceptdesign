@@ -81,13 +81,40 @@ revelar.reveal('.efeito-card1', {
 revelar.reveal('.efeito-card2', {
   duration: 2000,
   distance: '90px',
-  delay: 1000
+  delay: 600
 })
 
 revelar.reveal('.efeito-card3', {
   duration: 2000,
   distance: '90px',
-  delay: 1500
+  delay: 700
+})
+
+
+
+// Efeito Card do Portifolio
+revelar.reveal('.efeito-card4', {
+  duration: 2000,
+  distance: '90px',
+  delay: 500
+})
+
+revelar.reveal('.efeito-card5', {
+  duration: 2000,
+  distance: '90px',
+  delay: 600
+})
+
+revelar.reveal('.efeito-card6', {
+  duration: 2000,
+  distance: '90px',
+  delay: 700
+})
+
+revelar.reveal('.efeito-card7', {
+  duration: 2000,
+  distance: '90px',
+  delay: 800
 })
 
 
@@ -106,3 +133,19 @@ revelar.reveal('.direita-esquerda', {
   delay: 600,
   origin: 'right'
 })
+
+
+
+// https://api.jquery.com/jQuery.ajax
+$.ajax({
+  method: 'POST',
+  url: 'https://formsubmit.co/ajax/emilysousa.394@gmail.com',
+  dataType: 'json',
+  accepts: 'application/json',
+  data: {
+      name: "FormSubmit",
+      message: "I'm from Devro LABS"
+  },
+  success: (data) => console.log(data),
+  error: (err) => console.log(err)
+});

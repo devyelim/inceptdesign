@@ -42,11 +42,20 @@ section {
   /* background-color: #fff; */
 }
 
+
 #topo{
   transition: .9s;
 }
 
-.nocturne, .efeito-card1, .efeito-card2, .efeito-card3, .esquerda-direita, .direita-esquerda{
+
+.logo{
+  width: 100px !important;
+  height: 100px;
+}
+
+
+.nocturne, .efeito-card1, .efeito-card2, .efeito-card3, 
+.esquerda-direita, .direita-esquerda, .efeito-card4, .efeito-card5, .efeito-card6, .efeito-card7{
   visibility: hidden;
 }
 
@@ -925,6 +934,48 @@ div .ondas{
 .textura{
   background-image: url("img/textura.png");
 }
+
+
+
+section.portifolio .flex{
+  justify-content: space-around !important;
+  gap: 25px;
+}
+
+.flex{
+  display: flex;
+}
+
+.img-port{
+  height: 400px;
+  width: 400px !important;
+  border-radius: 25px;
+  background-size: cover;
+  background-color: #0000008e;
+  /* background-position: 100% 0%; */
+  box-shadow: inset 0 0 20px 1px #484848c4;
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000008e;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #fff;
+  padding: 30px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
 
 .projeto-size {
   width: 177px !important;

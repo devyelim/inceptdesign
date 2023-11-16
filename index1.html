@@ -18,9 +18,11 @@
     <!-- Css 3.0 -->
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="personalizados.css">
+    <link rel="stylesheet" href="galeria.css">
 
     <!-- JS PErsolalizado -->
     <script defer src="index.js" defer></script>
+    <script src="https://api.jquery.com/jQuery.ajax"></script>
 
     <!-- Jquery 5.2 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -209,7 +211,7 @@
         </section>
 
         <div id="Potifolio" class= "textura container-fluid img-fluid cover py-lg-2 hcf-bp-center hcf-bs-cover">
-          <section class="nocturne">
+          <section class="nocturne portifolio">
             <div class="container text-center ">
             <div class="px-4 pt-5 my-5 text-center">
               <h5 class="titulos">PROJETOS RECENTES</h5>              
@@ -221,7 +223,37 @@
               <button type="button" class="btn btn-projetos">DESENVOLVIMENTO</button>
               <button type="button" class="btn btn-projetos">ANUNCIOS</button>
               
-              <div class="container p-lg-4">
+              <div class="my-5 p">
+                <div class="flex">
+                  <div class="img-port efeito-card4" style="background-image: url(img/4.jpeg);">
+                    <div class="overlay text-justify">
+                      <h5>Projeto 1</h5>
+                      <p>Autor</p>
+                    </div>
+                  </div>
+                  <div class="img-port efeito-card5" style="background-image: url(img/8.jpeg);">
+                    <div class="overlay text-justify">
+                      <h5>Projeto 1</h5>
+                      <p>Autor</p>
+                    </div>
+                  </div>
+                  <div class="img-port efeito-card6" style="background-image: url(img/5.jpeg);">
+                    <div class="overlay text-justify">
+                      <h5>Projeto 1</h5>
+                      <p>Autor</p>
+                    </div>
+                  </div>
+                  <div class="img-port efeito-card7" style="background-image: url(img/7.jpeg);">
+                    <div class="overlay text-justify">
+                      <h5>Projeto 1</h5>
+                      <p>Autor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            
+              <!-- <div class="container p-lg-4">
                 <div class="container portifolio-costum">
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                     <div class="col mt-3 p-0">
@@ -244,7 +276,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           </section>
@@ -457,7 +489,7 @@
               <h2 class="titulos text-justify p-2">QUEM SOMOS</h2>
               <p>Um poquinho sobre nós.</p>
             
-              <div class="card p-0 mb-1 quemsomosstyle" >
+              <div class="card p-0 mb-1 quemsomosstyle bg-transparent" >
                 <div class="row g-0">
                   <div class="col-md-6">
                     <img src="img/quemsomosrodrigo5.png" class="img-fluid rounded-start quemsomosimg" alt="...">
@@ -491,7 +523,44 @@
             </div> 
           </div>
         </section>
+           
+        <div class="container-fluid" style="">
+          <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-2 py-5">
+              <div class="col-md-10 mx-auto col-lg-4">
+                <form action="https://formsubmit.co/emilysousa.394@gmail.com" method="POST" class="p-4 p-md-5 border rounded-3">
+                  <div class="form-floating mb-3">
+                    <input type="email" name="email" class="form-control" required placeholder="Insira seu email">
+                    <label for="floatingInput">Email para contato</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" name="name" class="form-control" required placeholder="Seu nome">
+                    <label for="floatingInput">Seu Nome</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required placeholder="Em que podemos te ajudar?"></textarea>
+                    <label for="floatingInput">Mensagem</label>
+                  </div>
+
+                  <input type="hidden" name="_subject" value="Solicitação de Contato!">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="text" name="_honey" style="display:none">
+                  <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+                  <button class="w-100 btn btn-lg btnpersona btn-yellow btn " type="submit">Enviar</button>
+                  <hr class="my-4">
+                  <small class="text-muted">Ao clicar em Enviar, você concorda com nossos termos de uso.</small>
+                </form>
+              </div>
+      
+              <div class="col-lg-6 text-justify text-lg-start">
+                <h2>FALE CONOSCO</h2>
+                <p class="fs-5">Nos envie uma solicitação de contato que te retornamos no mesmo dia.</p>
+              </div>
               
+            </div>
+          </div>
+        </div>
              
         
       </main>
@@ -521,7 +590,7 @@
             </div> -->
           </div>
           <div class="row py-6 border-top">
-            <div class="mx-4 col-lg-2 col-md-12 py-6">              
+            <div class="logo mx-4 col-lg-2 col-md-12 py-6">              
               <img src="img/incept-ligth.png">
             </div>
       
