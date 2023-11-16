@@ -25,16 +25,15 @@ body {
 
 body {
   background-color: #ffffff;
-  color: #1E1E1E;
   display: -ms-flexbox;
   display: flex;
   transition: .5s;
 }
 
-h1, h2, h3, h4, h5{
+/* body h1, h2, h3, h4, h5, p, a, button{
   font-family: Montserrat;
   color:#1E1E1E;
-}
+} */
 
 section {
   display: grid;
@@ -66,12 +65,12 @@ section {
   border-radius: 30px !important;
   height: 40px;
   width: 70px;
-  background-color: #1e1e1e !important;
-  border: #FDB724 solid 2px !important;
+  background-color: #1E1E1E !important;
+  border: #fff solid 2px !important;
 }
 
 .voltar-topo i{
-  color: #FDB724;
+  color: #fff;
   font-weight: 300;
   position: relative;
   align-items: center;
@@ -84,18 +83,20 @@ section {
 
 .trilho{
   width: 70px;
-  height: 40px;
-  background-color: #1E1E1E;
-  border: #FDB724 solid 2px;
+  height: 35px;
+  background-color: #747474;
+  border: #373737 solid 2px;
   border-radius: 20px;
   position: relative;
   
 }
 
 .trilho .indicador{
-  width: 35px;
-  height: 35px;
-  background-color: #FDB724;
+  width: 30px;
+  height: 30px;
+  margin: 0px 2px;
+  background-color: #fff;
+  border: #373737 solid 2px;
   border-radius: 20px;
   transform: scale(.8);
   cursor: pointer;
@@ -104,46 +105,79 @@ section {
   transition: .5s;
 }
 
-/* .darkmode-icon {
-  color: #1E1E1E;
-  position: relative;
-  width: 20px;
-  height: 20px;
-} */
-
 .trilho.dark-mode{
-  background-color: #fffefe;
+  background-color: #d1d1d1;
+  border: #fff solid 2px;
 }
 
 .trilho.dark-mode .indicador{
-  left: 35px;
+  left: 33px;
   background-color: #1e1e1e;
+  border: #fff solid 2px;
 }
 
-.icon-cont{
-  /* position: relative !important; */
-  display: flex;
-}
-
-.iconcont i{
-  padding-top: 10px ;
-}
-
-.sol.dark-mode i{
-  background-color: #1E1E1E !important;
+.voltar-topo{
+  color: #000;
 }
 
 body.dark-mode{
   background-color: #1e1e1e;
+
 }
 
-body.dark-mode h1,h2,h3,h4,h5{
-  color: #ffffff;
+/* body.dark-mode h1, h2, h3, h4, h5, p, ul, li, a, span, button{
+
+} */
+
+
+/* Icones sol e lua */
+
+.iconcont{
+  display: flex;
+  margin: 3px 5px;
+  align-items: center;
+}
+
+.lua{
+  opacity: 1;
+  color: #fff !important;
+  padding: 0px !important;
+  margin-left: 7px;
+}
+
+.sol{
+  opacity: 0;
+  padding: 0px !important;
+  margin: 0px 2px; 
+}
+
+.trilho.dark-mode .sol{
+  color: #1E1E1E !important;
+  opacity: 1;
+}
+
+.trilho.dark-mode .lua{
+  opacity: 0;
+}
+
+
+
+.trilho.dark-mode {
+
+}
+
+/* .trilho.dark-mode h1, h2, h3, h4, h5, p, a, span, i, button{
+  color: #ffffff ;
+} */
+
+
+/* body.dark-mode h1,h2,h3,h4,h5{
+
 }
 
 body.dark-mode p,a,i,span{
-  color: #ffffff;
-}
+
+} */
 
 .trilho.dark-mode svg{
   fill: #1E1E1E !important;
@@ -236,7 +270,7 @@ body.dark-mode p,a,i,span{
   width: fit-content !important;
   background-color: #FDB724;
   border-bottom: #1E1E1E solid 2px;
-  color: #1E1E1E;
+
   padding: 3px;
 }
 
@@ -244,7 +278,7 @@ body.dark-mode p,a,i,span{
   width: fit-content !important;
   background-color: #ffffff;
   border-bottom: #ffffff solid 2px;
-  color: #1e1e1e;
+
   padding: 3px;
 }
 
@@ -289,6 +323,7 @@ body.dark-mode p,a,i,span{
 nav {
   /* background-color: #00000096 !important; */
   background-color: #000 !important;
+  opacity: 0.9;
   margin-inline: auto !important;
   display: flex !important;
   justify-content: space-between !important;
@@ -431,10 +466,10 @@ div .ondas{
 
 @keyframes ondaAnimada {
   0%{
-    transform: translateY(-120px);
+    transform: translateY(-180px);
   }
   100%{
-    transform: translateY(-130px) ;
+    transform: translateY(-200px) ;
   }
 }
 
@@ -443,8 +478,10 @@ div .ondas{
   height: 500px;
   position: absolute;
   top: 0;
-  background-image: url(img/onda1.png);
-  background-size: 1650px 500px;
+  left: 0;
+  right: 0 !important;
+  background-image: url(img/n-onda.png);
+  background-size: 2000px 500px;
   /* transform: translateY(-30%) !important;  */
 
 }
@@ -456,15 +493,15 @@ div .ondas{
 
 @keyframes moveonda1 {
   from {
-    transform: translateX(-10px);
+    transform: translateX(-0px);
   }
 }
 
 #onda1{
   z-index: 1000;
-  opacity: 0.9;
+  opacity: 1;
   background-position-x: -100px;
-  animation: moveonda1 3s ease-in-out infinite alternate;
+  animation: moveonda1 2s ease-in-out infinite alternate;
 }
 
 
@@ -481,8 +518,8 @@ div .ondas{
 #onda2{
   z-index: 999;
   opacity: 0.5;
-  background-position-x: 400px;
-  animation: moveonda2 3s ease-in-out infinite alternate;
+  background-position-x: -200px;
+  animation: moveonda2 1.9s ease-in-out infinite alternate;
 }
 
 
@@ -498,9 +535,9 @@ div .ondas{
 
 #onda3{
   z-index: 998;
-  opacity: 0.4;
-  background-position-x: -1500px;
-  animation: moveonda3 1.9s ease-in-out infinite alternate;
+  opacity: 0.6;
+  background-position-x: -500px;
+  animation: moveonda3 1s ease-in-out infinite alternate;
 }
 
 
@@ -517,8 +554,9 @@ div .ondas{
 #onda4{
   z-index: 997;
   opacity: 0.3;
-  background-position-x: 200px;
+  background-position-x: -100px;
   animation: moveonda4 3s ease-in-out infinite alternate;
+  /* transform: translateZ(-100) !important; */
 }
 
 
@@ -604,11 +642,14 @@ div .ondas{
   letter-spacing: min(30px, 3vw);
 }
 
+.visit-card{
+  color: #fff !important;
+}
+
 .txt-init{
   font-size: min(17px, 3vw) !important; 
   font-family: "Montserrat";
   font-weight: 100 !important;
-  color: #ffffff;
 }
 
 .deslizeposition{
@@ -618,7 +659,6 @@ div .ondas{
 
 .deslize {
   font-size: min(35px, 5vw) !important; 
-  color: #ffffff;
   text-align: center;
   font-family: "Aquus-Regular", sans-serif;
   align-items: bottom !important;
@@ -626,20 +666,20 @@ div .ondas{
   position: relative;
   transform: translateY(70%);
   /* animation: setaAnimada 0.8s ease-in-out infinite alternate !important; */
-
 }
 
 .seta{
   position: relative;
+  stroke: #000;
+
   width: min(17px, 2vw) !important; 
-  color: #ffffff;
+  bottom: 0;
   position: relative;
   height: auto !important;
-  /* animation: setaAnimada 3s ease-in-out infinite alternate; */
   animation: setaAnimada 1s ease-in-out infinite alternate !important;
-  bottom: 0;
-  /* transform: translateY(-70%) !important; */
   mix-blend-mode: difference !important;
+  /* animation: setaAnimada 3s ease-in-out infinite alternate; */
+  /* transform: translateY(-70%) !important; */
 }
 
 @keyframes setaAnimada {
@@ -663,7 +703,7 @@ div .ondas{
 }
 
 .cotituloincio {
-  color: #ffffff;
+
   text-align: center !important;
   font: 250 16px "Montserrat", sans-serif;
   /* margin: 2rem; */
@@ -765,15 +805,16 @@ div .ondas{
 
 .onda-light{
   position: absolute;
-  top: 0 !important;
+  bottom: 0 !important;
   left: 0 !important;
   right: 0 !important;
   /* rotate: 180px !important; */
-  transform: translateY(-60%);
+  transform: translateY(-13%);
+  width: 100%;
 }
 
 .subtituloservicos {
-  color: #1E1E1E;
+
   font-family: Montserrat;
   font-size: 15px;
   font-style: normal;
@@ -784,7 +825,7 @@ div .ondas{
 
 .descricaoservicos {
   width: 100%;
-  color: #1E1E1E;
+
   text-align: justify;
   font-family: Montserrat;
   font-size: 14px;
@@ -866,7 +907,7 @@ div .ondas{
 
 
 #navbar ul li a {
-  color: #ffffff;
+
   text-align: center;
   font: 300 13px/30px "Montserrat", sans-serif;
   position: relative;
@@ -1094,7 +1135,7 @@ i{
 }
 
 .incept{
-  color: #ffffff;
+
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -1104,7 +1145,7 @@ i{
 }
 
 .direitosreservados{
-  color: #ffffff;
+
   font-family: Montserrat;
   font-size: 16px;
   font-style: italic;

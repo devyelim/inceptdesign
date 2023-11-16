@@ -45,16 +45,17 @@ const elements = document.querySelectorAll('.ocult')
 // var onda3 = document.getElementById('onda3')
 // var onda4 = document.getElementById('onda4')
 
-let trilho = document.getElementById('trilho')
-let body = document.querySelector('body')
-let footer = document.querySelector('footer')
 
-trilho.addEventListener('click',()=>{
-  trilho.classList.toggle('dark-mode')
-  body.classList.toggle('dark-mode')
-  footer.classList.toggle('dark-mode')
-  sol.classList.toggle('dark-mode')
-})
+// Modo Escuro/Dark
+
+// let trilho = document.getElementById('trilho')
+// let body = document.querySelector('body')
+
+
+// trilho.addEventListener('click',()=>{
+//   trilho.classList.toggle('dark-mode')
+//   body.classList.toggle('dark-mode')
+// })
 
 
 // Revelar ao Scrollar
