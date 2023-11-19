@@ -9,43 +9,22 @@
     content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- Bootstrap 5.2  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <!-- Css 3.0 -->
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="personalizados.css">
     <link rel="stylesheet" href="galeria.css">
 
-    <!-- JS PErsolalizado -->
-    <script defer src="index.js" defer></script>
-    <script src="https://api.jquery.com/jQuery.ajax"></script>
-
-    <!-- Jquery 5.2 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <!-- Icones Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- Masony -->
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Incept Desing</title>
   </head>
 
   <body>
+
     <div class="container-fluid mx-auto flex-column" style="padding: 0px !important;">
     <!-- Navbar responsivo em escala lg -->
 
@@ -136,7 +115,7 @@
           
         </section>
 
-        <section id="oquefazemos" class="">
+        <div id="oquefazemos" class="">
           <div class="onda-position" >
             <svg class="onda-light ondasvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill = "#fff" fill-opacity="1" 
@@ -208,202 +187,92 @@
               </div>
             </div>
           </div>
+        </div>
+        
+
+        <section class="sectionprojetos textura container-fluid img-fluid cover py-lg-2 hcf-bp-center hcf-bs-cover">
+          <div class="nocturne">
+            <div class="container">
+              <div class="pt-5 my-5 py-5 text-center">
+                <h5 class="titulos">PROJETOS RECENTES</h5>
+                <ul>
+                  <li class="list active" data-filter="tudo"><i class="bi bi-star-fill"></i>
+                    TODOS
+                  </li>
+                  <li class="list" data-filter="design"><i class="bi bi-vector-pen"></i>
+                    DESIGN CRIATIVO
+                  </li>
+                  <li class="list" data-filter="dev"><i class="bi bi-code-slash"></i>
+                    DESENVOLVIMENTO
+                  </li>
+                  <li class="list" data-filter="anuncios"><i class="bi bi-rocket-takeoff-fill"></i>
+                    ANUNCIOS
+                  </li>
+                </ul>
+      
+      
+                <div class="projetos mt-5">
+                  <div class="projeto" data-item="dev"><img class="img-port" src="img/7.jpeg"></div>
+                  <div class="projeto" data-item="design"><img class="img-port" src="img/12.jpg"></div>
+                  <div class="projeto" data-item="anuncios"><img class="img-port" src="img/11.jpeg"></div>
+                  <div class="projeto" data-item="anuncios"><img class="img-port" src="img/4.jpeg"></div>
+                  <div class="projeto" data-item="dev"><img class="img-port" src="img/8.jpeg"></div>
+                  <div class="projeto" data-item="design"><img class="img-port" src="img/5.jpeg"></div>
+                  <div class="projeto" data-item="design"><img class="img-port" src="img/12.jpg"></div>
+                  <div class="projeto" data-item="dev"><img class="img-port" src="img/1.jpeg"></div>
+                  <div class="projeto" data-item="dev"><img class="img-port" src="img/6.jpeg"></div>
+                  <div class="projeto" data-item="dev"><img class="img-port" src="img/9.jpeg"></div>
+                </div>
+              </div>
+            </div>            
+          </div>
+          
         </section>
 
-        <div id="Potifolio" class= "textura container-fluid img-fluid cover py-lg-2 hcf-bp-center hcf-bs-cover">
-          <section class="nocturne portifolio">
+        <!-- <div id="portfolio" class= "textura container-fluid img-fluid cover py-lg-2 hcf-bp-center hcf-bs-cover">
+          <section class="nocturne">
             <div class="container text-center ">
-            <div class="px-4 pt-5 my-5 text-center">
-              <h5 class="titulos">PROJETOS RECENTES</h5>              
+              <div class="px-4 pt-5 my-5 py-5 text-center">
+                <h5 class="titulos">PROJETOS RECENTES</h5>          
 
-              <div class="espaco-vertical"></div>
-              
-              <button type="button" class="btn btn-projetos">TODOS</button>
-              <button type="button" class="btn btn-projetos">DESIGN CRIATIVO</button>
-              <button type="button" class="btn btn-projetos">DESENVOLVIMENTO</button>
-              <button type="button" class="btn btn-projetos">ANUNCIOS</button>
-              
-              <div class="my-5 p">
-                <div class="flex">
-                  <div class="img-port efeito-card4" style="background-image: url(img/4.jpeg);">
-                    <div class="overlay text-justify">
-                      <h5>Projeto 1</h5>
-                      <p>Autor</p>
-                    </div>
-                  </div>
-                  <div class="img-port efeito-card5" style="background-image: url(img/8.jpeg);">
-                    <div class="overlay text-justify">
-                      <h5>Projeto 1</h5>
-                      <p>Autor</p>
-                    </div>
-                  </div>
-                  <div class="img-port efeito-card6" style="background-image: url(img/5.jpeg);">
-                    <div class="overlay text-justify">
-                      <h5>Projeto 1</h5>
-                      <p>Autor</p>
-                    </div>
-                  </div>
-                  <div class="img-port efeito-card7" style="background-image: url(img/7.jpeg);">
-                    <div class="overlay text-justify">
-                      <h5>Projeto 1</h5>
-                      <p>Autor</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            
-              <!-- <div class="container p-lg-4">
-                <div class="container portifolio-costum">
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-                    <div class="col mt-3 p-0">
-                        <img src="img/exemploprojeto.png" class="img-thumbnail" alt="image">
-                    </div>
-                    <div class="col mt-3 p-0">
-                        <img src="img/exemploprojeto.png" class="img-thumbnail" alt="image">
-                    </div>
-                    <div class="col mt-3 p-0">
-                        <img src="img/exemploprojeto.png" class="img-thumbnail" alt="image">
-                    </div>
-                    <div class="col mt-3 p-0">
-                      <img src="img/exemploprojeto.png" class="img-thumbnail" alt="image">
-                    </div>
-                    <div class="col mt-3 p-0">
-                        <img src="img/exemploprojeto.png" class="img-thumbnail" alt="image">
-                    </div>
-                    <div class="col mt-3 p-0">
-                        <img src="img/exemploprojeto.png" class="img-thumbnail" alt="image">
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-          </div>
-          </section>
-          
-          <section id="Galeria" class="container direita-esquerda col-xxl-8" >
-            <div class="row flex-lg-row-reverse align-items-justify g-5 py-5">
-              <div class="col-sm-12 col-md-12 col-lg-3  mb-6" style="transform: translatey(25%);">
-                <p class="pretitulo">ANTES DE IR</p>
-                <h2 class="titulo">GALERIA</h2>
-                <p class="subtitulos" style="max-width: 280px;">Confira as ultimas criações da semana e portifólio criativo.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start" style="max-width: 270px;">
-                  <a href="galeria.html"><button type="button" class="btnpersona btn-yellow btn ">VER</button></a>
-                </div>
-              </div>
-              <div class="col-lg-9 col-sm-12 col-md-12 mx-auto">
-                <div class="rowpersona" >
-                  <div class="column" id="row-galeria">
-                    <img src="img/1.jpeg" class="cardsgaleria">
-                    <img src="img/2.jpeg" class="cardsgaleria">
-                    <img src="img/3.jpeg" class="cardsgaleriavari">                    
-                  </div>
-                  <div class="column custom-offset"  id="row-galeria">
-                    <img src="img/3.jpeg" class="cardsgaleria">
-                    <img src="img/4.jpeg" class="cardsgaleriavari">
-                    <img src="img/6.jpeg" class="cardsgaleria">                    
-                  </div>
-                  <div class="column" id="row-galeria">
-                    <img src="img/7.jpeg" class="cardsgaleria">
-                    <img src="img/8.jpeg" class="cardsgaleriavari">
-                    <img src="img/9.jpeg" class="cardsgaleria">
-                  </div>
-                  <div class="column custom-offset" id="row-galeria">
-                    <img src="img/11.jpeg" class="cardsgaleria">
-                    <img src="img/12.jpg" class="cardsgaleriavari">
-                    <img src="img/13.jpg" class="cardsgaleria">
-                  </div>
-                  <div class="column" id="row-galeria">
-                    <img src="img/4.jpeg" class="cardsgaleriavari">
-                    <img src="img/2.jpeg" class="cardsgaleria">
-                    <img src="img/5.jpeg" class="cardsgaleria">
-                  </div>
-                </div>  
-
-                <!-- <div data-masonry='{"percentPosition": true }'>
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="custom-offset col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="custom-offset col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleriavari img-fluid" alt="...">
-                    </div>
-                  </div>
-      
+                <button type="button" class="active btn btn-projetos">TODOS</button>
+                <button type="button" class="btn btn-projetos">DESIGN CRIATIVO</button>
+                <button type="button" class="btn btn-projetos">DESENVOLVIMENTO</button>
+                <button type="button" class="btn btn-projetos">ANUNCIOS</button>
                 
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleriavari img-fluid" alt="...">
+                <div class=" my-5">
+                  <div class="flex portfolio-items">
+                    
+                    <div class="img-port efeito-card4 portfolio-item criativos" style="background-image: url(img/4.jpeg);">
+                      <div class="overlay portfolio-item-inner text-justify">
+                        <h5>Projeto 1</h5>
+                        <p>Autor</p>
+                      </div>
+                    </div>
+                    <div class="img-port efeito-card5 portfolio-item criativos" style="background-image: url(img/8.jpeg);">
+                      <div class="overlay portfolio-item-inner text-justify">
+                        <h5>Projeto 1</h5>
+                        <p>Autor</p>
+                      </div>
+                    </div>
+                    <div class="img-port efeito-card6 portfolio-item devs" style="background-image: url(img/5.jpeg);">
+                      <div class="overlay portfolio-item-inner text-justify">
+                        <h5>Projeto 1</h5>
+                        <p>Autor</p>
+                      </div>
+                    </div>
+                    <div class="img-port efeito-card7 portfolio-item anuncios" style="background-image: url(img/7.jpeg);">
+                      <div class="overlay portfolio-item-inner text-justify">
+                        <h5>Projeto 1</h5>
+                        <p>Autor</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">               
-                      <img src="img/exemploprojeto.png" class="cardsgaleriavari img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="custom-offset col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">                             
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="custom-offset col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleriavari img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleriavari img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="custom-offset col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="custom-offset col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                  <div class="col-sm-3 col-md-4 col-lg-2 mb-3 p-1">
-                    <div class="card text-center">
-                      <img src="img/exemploprojeto.png" class="cardsgaleria img-fluid" alt="...">
-                    </div>
-                  </div>
-                </div> -->
+                </div>                                
               </div>
             </div>
-          </section>
-                
-        </div>
+          </section>       
+        </div> -->
     
         <section id="Planos e Preços" class="container-fluid planosbk img-fluid cover py-lg-10 hcf-bp-center hcf-bs-cover">
           <div class="container pt-5">
@@ -483,18 +352,18 @@
 
         <div class="espaco-vertical"></div>
 
-        <section class=" container-fluid">
-          <div id="Quem somos" class="container my-5 quemsomos">
-            <div class="row container esquerda-direita my-5 py-5">
-              <h2 class="titulos text-justify p-2">QUEM SOMOS</h2>
-              <p>Um poquinho sobre nós.</p>
-            
-              <div class="card p-0 mb-1 quemsomosstyle bg-transparent" >
-                <div class="row g-0">
-                  <div class="col-md-6">
-                    <img src="img/quemsomosrodrigo5.png" class="img-fluid rounded-start quemsomosimg" alt="...">
+        <div class=" container-fluid" style="">
+          <div id="Quem somos" class="container">
+            <div class="row container nocturne my-5 p-5">
+              <h2 class="titulos text-justify mb-5">FUNDADORES</h2>
+          
+              
+              <div class="pr-2 mb-4 col-lg-6 esquerda-direita">
+                <div class="row g-0 align-items-center">
+                  <div class="col-md-6 col-sm-6">
+                    <img src="img/quemsomosrodrigo5.png" class=" rounded-2 quemsomosimg" alt="...">
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6  col-sm-6">
                     <div class="card-body">
                       <h5 class="card-title">Rodrigo Prates</h5>
                       <p>Designer Gráfico</p>
@@ -505,14 +374,14 @@
                 </div>
               </div>
               
-              <div class="card p-0 mb-1 quemsomosstyle" >
-                <div class="row g-0">
-                  <div class="col-md-6">
-                    <img src="img/quemsomosemily.png" class="img-fluid rounded-start quemsomosimg" alt="...">
+              <div class="pr-2 mb-4 col-lg-6 esquerda-direita">
+                <div class="row g-0 align-items-center">
+                  <div class="col-md-6 col-sm-6">
+                    <img src="img/quemsomosemily.png" class=" rounded-2 quemsomosimg" alt="...">
                   </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title">Emily Sousa</h5>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="card-body text-justify text-lg-start mb-2">
+                      <h5 class="card-title">Êmily Sousa</h5>
                       <p>Programadora</p>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -522,46 +391,89 @@
               </div>
             </div> 
           </div>
-        </section>
+        </div>
            
-        <div class="container-fluid" style="">
+        <div class="container-fluid" style="background-color: #333; color: #fff;">
           <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-            <div class="row align-items-center g-lg-2 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-lg-2 py-5 nocturne">
+              
+              <div class="col-lg-6 text-justify text-lg-start mb-2" >
+                <h1>FALE CONOSCO</h1>
+                <p class="fs-5" style="width: 400px;">Nos envie uma solicitação de contato que te retornamos no mesmo dia.</p>
+                
+              </div>
+
               <div class="col-md-10 mx-auto col-lg-4">
-                <form action="https://formsubmit.co/emilysousa.394@gmail.com" method="POST" class="p-4 p-md-5 border rounded-3">
+                <form action="https://formsubmit.co/emilysousa.394@gmail.com" method="POST" class="formulario-email p-4 p-md-5 border rounded-3">
                   <div class="form-floating mb-3">
-                    <input type="email" name="email" class="form-control" required placeholder="Insira seu email">
+                    <input type="email" name="email" id="email" class="form-control" required placeholder="Insira seu email">
                     <label for="floatingInput">Email para contato</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="text" name="name" class="form-control" required placeholder="Seu nome">
+                    <input type="text" name="name" id="name" class="form-control" required placeholder="Seu nome">
                     <label for="floatingInput">Seu Nome</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required placeholder="Em que podemos te ajudar?"></textarea>
-                    <label for="floatingInput">Mensagem</label>
+                    <textarea name="message" class="form-control"  rows="10" required placeholder="Em que podemos te ajudar?"></textarea>
+                    <label for="floatingInput" id="message">Mensagem</label>
                   </div>
 
                   <input type="hidden" name="_subject" value="Solicitação de Contato!">
                   <input type="hidden" name="_captcha" value="false">
                   <input type="text" name="_honey" style="display:none">
-                  <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
 
                   <button class="w-100 btn btn-lg btnpersona btn-yellow btn " type="submit">Enviar</button>
                   <hr class="my-4">
                   <small class="text-muted">Ao clicar em Enviar, você concorda com nossos termos de uso.</small>
                 </form>
               </div>
-      
-              <div class="col-lg-6 text-justify text-lg-start">
-                <h2>FALE CONOSCO</h2>
-                <p class="fs-5">Nos envie uma solicitação de contato que te retornamos no mesmo dia.</p>
-              </div>
-              
             </div>
           </div>
         </div>
-             
+
+        <section id="Galeria" class="container my-5 direita-esquerda col-xxl-8" >
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-sm-12 col-md-12 col-lg-3  mb-6" >
+              <p class="pretitulo">ANTES DE IR...</p>
+              <h2 class="titulo">CONHEÇA NOSSA GALERIA</h2>
+              <p class="subtitulos" style="max-width: 280px;">Reservamos um espaço especial para nossas artes criativas mais recentes.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start" style="max-width: 270px;">
+                <a href="galeria.html"><button type="button" class="btnpersona btn-yellow btn ">VER</button></a>
+              </div>
+            </div>
+            <div class="col-lg-9 col-sm-12 col-md-12 mx-auto">
+              <div class="rowpersona" >
+                <div class="column" id="row-galeria">
+                  <img src="img/1.jpeg" class="cardsgaleria">
+                  <img src="img/2.jpeg" class="cardsgaleria">
+                  <img src="img/3.jpeg" class="cardsgaleriavari">                    
+                </div>
+                <div class="column custom-offset"  id="row-galeria">
+                  <img src="img/3.jpeg" class="cardsgaleria">
+                  <img src="img/4.jpeg" class="cardsgaleriavari">
+                  <img src="img/6.jpeg" class="cardsgaleria">                    
+                </div>
+                <div class="column" id="row-galeria">
+                  <img src="img/7.jpeg" class="cardsgaleria">
+                  <img src="img/8.jpeg" class="cardsgaleriavari">
+                  <img src="img/9.jpeg" class="cardsgaleria">
+                </div>
+                <div class="column custom-offset" id="row-galeria">
+                  <img src="img/11.jpeg" class="cardsgaleria">
+                  <img src="img/12.jpg" class="cardsgaleriavari">
+                  <img src="img/13.jpg" class="cardsgaleria">
+                </div>
+                <div class="column" id="row-galeria">
+                  <img src="img/4.jpeg" class="cardsgaleriavari">
+                  <img src="img/2.jpeg" class="cardsgaleria">
+                  <img src="img/5.jpeg" class="cardsgaleria">
+                </div>
+              </div>  
+
+            </div>
+          </div>
+        </section>   
         
       </main>
       
@@ -664,6 +576,28 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- JS PErsolalizado -->
+    <script defer src="index.js"></script>
+    <script src="https://api.jquery.com/jQuery.ajax"></script>
+    <!--Isotopes - Responsavel pelo filtro de projetos-->
+    <script defer type="text/javascript" src="js/jquery.isotope.js"></script>
+
+    <!-- Jquery 5.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Masony -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
   </body>
 
 </html>

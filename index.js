@@ -135,17 +135,27 @@ revelar.reveal('.direita-esquerda', {
 })
 
 
+let list = document.querySelectorAll('.list');
+let projeto = document.querySelectorAll('.projeto');
 
-// https://api.jquery.com/jQuery.ajax
-$.ajax({
-  method: 'POST',
-  url: 'https://formsubmit.co/ajax/emilysousa.394@gmail.com',
-  dataType: 'json',
-  accepts: 'application/json',
-  data: {
-      name: "FormSubmit",
-      message: "I'm from Devro LABS"
-  },
-  success: (data) => console.log(data),
-  error: (err) => console.log(err)
-});
+  for(let i = 0; i<list.length; i++){
+    list[i].addEventListener('click', function (){
+      for(let j = 0; j<list.length; j++){
+        list[j].classList.remove('active');
+      }
+      this.classList.add('active');
+
+      let dataFilter = this.getAttribute('data-filter');
+      for( let k = 0; k<projeto.length; k++){
+        projeto[k].classList.remove('active');
+        projeto[k].classList.add('hide');
+
+        if(projeto[k].getAttribute('data-item') == dataFilter ||
+        dataFilter == "tudo"){
+          projeto[k].classList.remove('hide');
+          projeto[k].classList.add('active');
+
+        }
+      }
+    })
+  }
