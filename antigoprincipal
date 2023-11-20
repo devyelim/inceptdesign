@@ -1281,6 +1281,7 @@ section.portifolio .flex {
 .sectionplanos{
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   width: 100%;
   transition: .5s !important;
@@ -1290,25 +1291,29 @@ section.portifolio .flex {
 }
 
 .sectionplanos .plano{
-  position: relative;
-  display: block;
   color: #FFF;
+  position: relative;
   width: 260px;
-  backdrop-filter: blur(2px) !important;
-  background-color: #ffffff05 !important;
-  border-top: 4px solid #FFF;
-  border-radius: 0 15px 10px 10px;
+  /* height: 450px; */
+  /* margin-right: 20px; */
   margin-left: 30px;
   margin-bottom: 50px;
+  display: block;
+  /* background: linear-gradient(transparent, #0C1427); */
+  backdrop-filter: blur(2px) !important;
+  /* background-color: transparent !important; */
+  background-color: #ffffff05 !important;
+  border-radius: 0 15px 10px 10px !important;
+  border-top: 4px solid #FFF !important;
+
 }
 
 
 .conteudoplanos{
   position: relative;
-  overflow: hidden;
   height: 250px;
   color: #FFF;
-  padding: 20px;
+  overflow: hidden;
   text-align: left;
   font-size: 14px;
   font-style: normal;
@@ -1352,7 +1357,19 @@ section.portifolio .flex {
 
 
 
-.headplanos {
+.card-planos {
+  backdrop-filter: blur(4px) !important;
+  background-color: #ffffff05 !important;
+  border-radius: 0 15px 10px 10px !important;
+  border-top: 4px solid #FFF !important;
+  width: 270px;
+}
+
+.card-planos p, h5 {
+  margin-bottom: 0rem !important;
+}
+
+.cabecalhosplanos {
   color: #FFF;
   text-align: center;
   height: 124px;
@@ -1396,8 +1413,9 @@ section.portifolio .flex {
 }
 
 .rodapeplanos {
-  padding: 20px;
+  padding: 20px !important;
   height: 80px;
+  border-color: #FFF !important;
 }
 
 
