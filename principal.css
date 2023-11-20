@@ -290,7 +290,7 @@ body.dark-mode p,a,i,span{
 /* Botões */
 
 .btnpersona {
-  width: 270px;
+  width: 100%;
 }
 
 .btn-yellow {
@@ -488,10 +488,21 @@ div .ondas {
   top: 0;
   left: 0;
   right: 0 !important;
-  background-image: url(img/n-onda.png);
+  background-image: url(img/bluewave.png);
   background-size: 2000px 500px;
   /* transform: translateY(-30%) !important;  */
+}
 
+.ondadiff {
+  width: 100% !important;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0 !important;
+  background-image: url(img/bluewavediff.png);
+  background-size: 2000px 500px;
+  /* transform: translateY(-30%) !important;  */
 }
 
 
@@ -544,7 +555,7 @@ div .ondas {
 #onda3 {
   z-index: 998;
   opacity: 0.6;
-  background-position-x: -500px;
+  background-position-x: -300px;
   animation: moveonda3 1s ease-in-out infinite alternate;
 }
 
@@ -948,14 +959,14 @@ section.portifolio .flex {
   display: flex;
 }
 
-.img-port {
+.img-porrt {
   /* height: 400px;
   width: 400px !important; */
+  /* background-color: #0000008e; */
+  /* background-position: 0% 100%; */
   border-radius: 25px;
   background-size: cover;
-  /* background-color: #0000008e; */
-  /* background-position: 100% 0%; */
-  box-shadow: 2px 2px 7px 1px #00000075;
+  box-shadow: 0px 0px 7px 1px #00000075;
   position: relative;
 }
 
@@ -1047,8 +1058,12 @@ section.portifolio .flex {
   width: 250px;
   height: 450px;
   margin: 10px;
+  margin-bottom: 50px;
   display: block;
   transition: .5s !important;
+  border-radius: 25px;
+  box-shadow: 6px 0px 10px 1px #b1b0b075;
+
 }
 
 .projetos .projeto.hide{
@@ -1175,11 +1190,98 @@ section.portifolio .flex {
   color: #ffffff !important;
 }
 
+/* .sectionplanos{
+  display: flex;
+  justify-content: center;
+  gap: 20 !important;
+  color: #FFF;
+} */
+
+
+.sectionplanos{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  width: 100%;
+  transition: .5s !important;
+  font: inherit;
+  font-family: Montserrat;
+
+}
+
+.sectionplanos .plano{
+  color: #FFF;
+  position: relative;
+  width: 260px;
+  /* height: 450px; */
+  /* margin-right: 20px; */
+  margin-left: 30px;
+  margin-bottom: 50px;
+  display: block;
+  /* background: linear-gradient(transparent, #0C1427); */
+  backdrop-filter: blur(2px) !important;
+  background-color: transparent !important;
+  border-radius: 0 15px 10px 10px !important;
+  border-top: 4px solid #FFF !important;
+
+}
+
+
+.conteudoplanos{
+  position: relative;
+  height: 250px;
+  color: #FFF;
+  overflow: hidden;
+  text-align: left;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+
+.conteudoplanos::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 260px;
+  height: 100px;
+  background: linear-gradient(transparent, #0C1427);
+}
+
+#lermais{
+  border: none;
+  color: #FFF;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#lermais:hover{
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.plano.active .conteudoplanos{
+  height: auto;
+}
+
+.plano.active .conteudoplanos::before{
+  visibility: hidden;
+}
+
+
+
 .card-planos {
   backdrop-filter: blur(4px) !important;
   background-color: #ffffff05 !important;
   border-radius: 0 15px 10px 10px !important;
-  border-top-color: #FFF !important;
+  border-top: 4px solid #FFF !important;
+  width: 270px;
 }
 
 .card-planos p, h5 {
@@ -1187,14 +1289,14 @@ section.portifolio .flex {
 }
 
 .cabecalhosplanos {
+  color: #FFF;
+  text-align: center;
   height: 124px;
 }
 
 .nomeplanos {
-  color: #FFF;
-  text-align: center;
   font-family: Montserrat;
-  font-size: 28px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -1202,26 +1304,25 @@ section.portifolio .flex {
 }
 
 .precoplanos {
-  color: #FFF;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin: 0px !important;
 }
 
 .tipoplanos {
-  color: #FFF;
   text-align: center;
   font-family: Montserrat;
   font-size: 13px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  margin: 0px !important;
 }
 
 .beneficiosplanos {
-  color: #FFF;
   font-family: Montserrat;
   font-size: 13px;
   font-style: normal;

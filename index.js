@@ -159,3 +159,17 @@ let projeto = document.querySelectorAll('.projeto');
       }
     })
   }
+
+
+  var button = document.getElementById('lermais');
+  
+  button.addEventListener('click', function(){
+    var plano = document.querySelector('.plano');
+    plano.classList.toggle('active');
+
+    if (plano.classList.contains('active')) {
+      return button.textContent = 'Ver menos';
+    }
+
+    button.textContent = 'Ver todos os benefícios';
+  });
