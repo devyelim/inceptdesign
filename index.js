@@ -161,15 +161,21 @@ let projeto = document.querySelectorAll('.projeto');
   }
 
 
-  var button = document.getElementById('lermais');
-  
-  button.addEventListener('click', function(){
-    var plano = document.querySelector('.plano');
-    plano.classList.toggle('active');
+$(document).ready(function() {
+  $('.read-more').click(function() {
+    var $content = $(this).prev('.contentplanos');
+    var $card = $(this).parent('.cardplanos .card-body');
 
-    if (plano.classList.contains('active')) {
-      return button.textContent = 'Ver menos';
+    $content.toggleClass('expanded');
+
+    if ($content.hasClass('expanded')) {
+      $content.css('max-height', $content.prop('scrollHeight') + 'px');
+      $card.css('height', $content.prop('scrollHeight') + 80 + 'px'); // 80px = 40px (cabeçalho) + 40px (rodapé)
+      $(this).text('Ver menos');
+    } else {
+      $content.css('max-height', '230px'); // Altura inicial do conteúdo
+      $card.css('height', '330px'); // Altura do card com cabeçalho e rodapé
+      $(this).text('Ver todos os benefícios');
     }
-
-    button.textContent = 'Ver todos os benefícios';
   });
+});

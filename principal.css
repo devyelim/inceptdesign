@@ -326,9 +326,6 @@ body.dark-mode p,a,i,span{
 /* Navbar */
 
 nav {
-  /* background-color: #00000096 !important; */
-  background-color: #000 !important;
-  opacity: 0.9;
   margin-inline: auto !important;
   display: flex !important;
   justify-content: space-between !important;
@@ -379,7 +376,6 @@ ul, li, a .padding-nav {
   padding: 0px 8px;
   margin: 5px;
   font-weight: 200 !important;
-
 }
 
 /* #ulnav:hover li a{
@@ -387,10 +383,12 @@ ul, li, a .padding-nav {
 } */
 
 #ulnav li a:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  color: #333;
+  /* transform: scale(1.1); */
   /* font-weight: 200 !important; */
+  opacity: 1;
+  color: #333;
+  font-weight: bold !important;
+
 }
 
 #ulnav li a::before {
@@ -423,11 +421,13 @@ ul, li, a .padding-nav {
 /* Navbar Scroll */
 
 nav.rolagem {
-  background: linear-gradient(#525252, #373737);
+  opacity: 0.9;
+  background-color: #1e1e1e !important;
   height: auto;
   transition: 0.4s ease-in !important;
   padding: 10px 30px !important;
   box-shadow: 0px 0px 5px 0px #2c2b2b5e;
+  /* background: linear-gradient(#1E1E1E, #373737); */
   /* border-bottom: #ffffff solid 1px; */
 }
 
@@ -439,7 +439,7 @@ nav.rolagem ul li a {
 nav.rolagem ul li a:hover {
   color: #1E1E1E !important;
   padding-block: 10px;
-  font-weight: 200 !important;
+  /* font-weight: 200 !important; */
 }
 
 nav.rolagem span {
@@ -1056,9 +1056,9 @@ section.portifolio .flex {
 .projetos .projeto{
   position: relative;
   width: 250px;
-  height: 450px;
+  height: 400px;
   margin: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   display: block;
   transition: .5s !important;
   border-radius: 25px;
@@ -1270,13 +1270,89 @@ section.portifolio .flex {
   color: #ffffff !important;
 }
 
-/* .sectionplanos{
-  display: flex;
-  justify-content: center;
-  gap: 20 !important;
-  color: #FFF;
-} */
+.infoplanos {
+  flex-direction: column;
+  margin-left: -20px;
+  text-align: left;
+}
 
+
+/* PLanos e Preços Cards */
+.contplanos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around !important;
+  align-items: flex-start;
+  max-width: 100%;
+
+}
+
+.cardplanos {
+  display: block;
+  flex-direction: column;
+  width: calc(33.33% - 20px);
+  min-width: 260px;
+  transition: all 0.4s;
+
+}
+
+.cardplanos:hover {
+  transform: translateY(-10px);
+  transition: all 0.4s;
+}
+
+
+.contentplanos {
+  overflow: hidden;
+  max-height: 230px; /* Altura inicial do conteúdo */
+  transition: max-height 0.4s ease; /* Transição suave ao expandir/retrair */
+  padding: 20px;
+  margin: 10px;
+}
+
+
+.contentplanos p{
+  margin-bottom: 8px;
+  line-height: normal;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+.read-more {
+  /* background-color: #007bff !important; */
+  border-top: solid 3px #fff !important;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 250px;
+  font-size: 15px;
+  transition: 0.3s;
+
+}
+
+.read-more:hover {
+  font-weight: bolder;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Media query para ajustar os cards em telas menores */
+@media screen and (max-width: 768px) {
+  .cardplanos, .plano {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardplanos, .plano {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Fim Media Query */
 
 .sectionplanos{
   display: flex;
@@ -1293,16 +1369,16 @@ section.portifolio .flex {
   position: relative;
   display: block;
   color: #FFF;
-  width: 260px;
-  backdrop-filter: blur(2px) !important;
+  width: 260px !important;
+  backdrop-filter: blur(8px) !important;
   background-color: #ffffff05 !important;
   border-top: 4px solid #FFF;
   border-radius: 0 15px 10px 10px;
-  margin-left: 30px;
+  /* margin-right: 15px; */
   margin-bottom: 50px;
 }
 
-
+/* Efeito esmaecer na base do conteudo do card (inativo) */
 .conteudoplanos{
   position: relative;
   overflow: hidden;
@@ -1316,7 +1392,6 @@ section.portifolio .flex {
   line-height: 12px;
 }
 
-
 .conteudoplanos::before{
   content: '';
   position: absolute;
@@ -1327,30 +1402,10 @@ section.portifolio .flex {
   height: 100px;
   background: linear-gradient(transparent, #0C1427);
 }
-
-#lermais{
-  border: none;
-  color: #FFF;
-  background-color: transparent;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#lermais:hover{
-  font-size: 17px;
-  transition: 0.3s;
-}
-
-.plano.active .conteudoplanos{
-  height: auto;
-}
-
-.plano.active .conteudoplanos::before{
-  visibility: hidden;
-}
+/*  */
 
 
+/* Classes tipografia e alinhamento*/
 
 .headplanos {
   color: #FFF;
@@ -1359,7 +1414,6 @@ section.portifolio .flex {
 }
 
 .nomeplanos {
-  font-family: Montserrat;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -1368,7 +1422,6 @@ section.portifolio .flex {
 }
 
 .precoplanos {
-  font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1377,8 +1430,6 @@ section.portifolio .flex {
 }
 
 .tipoplanos {
-  text-align: center;
-  font-family: Montserrat;
   font-size: 13px;
   font-style: normal;
   font-weight: 300;
@@ -1387,7 +1438,6 @@ section.portifolio .flex {
 }
 
 .beneficiosplanos {
-  font-family: Montserrat;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1398,14 +1448,6 @@ section.portifolio .flex {
 .rodapeplanos {
   padding: 20px;
   height: 80px;
-}
-
-
-
-/* Aplica um deslocamento vertical de 20px nas colunas 2 e 4 */
-.custom-offset {
-  position: relative;
-  margin-top: -20px !important;
 }
 
 
@@ -1428,6 +1470,7 @@ section.portifolio .flex {
 }
 
 
+/* Formulario de Email */
 
 .formulario-email textarea,
 .formulario-email input {
@@ -1453,8 +1496,8 @@ section.portifolio .flex {
 .formulario-email input:focus,
 .formulario-email textarea:hover,
 .formulario-email textarea:focus {
-  border-color: #FDB724;
-  box-shadow: 0 0 0 1px #FDB724;
+  border-color: #048f99;
+  box-shadow: 0 0 0 1px #047999;
 }
 
 
@@ -1650,6 +1693,13 @@ i {
   vertical-align: middle;
   width: 100%;
 }
+
+/* Aplica um deslocamento vertical de 20px nas colunas 2 e 4 */
+.custom-offset {
+  position: relative;
+  margin-top: -20px !important;
+}
+
 
 #row-galeria img {
   /* opacity: 0.5; */
