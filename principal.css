@@ -23,9 +23,10 @@ body {
 
 body {
   background-color: #ffffff;
-  display: -ms-flexbox;
+  display: block;
   display: flex;
   transition: .5s;
+  width: 100%;
 }
 
 /* body h1, h2, h3, h4, h5, p, a, button{
@@ -40,6 +41,24 @@ section {
   /* background-color: #fff; */
 }
 
+h2 {
+  font-size: min(35px, 10vw) !important;
+}
+
+.tela-carregamento {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Garante que a tela de carregamento esteja acima de tudo */
+  opacity: 1; /* Definindo a opacidade inicial */
+  transition: opacity 1s ease;
+}
 
 #topo {
   transition: .9s;
@@ -317,6 +336,20 @@ body.dark-mode p,a,i,span{
   transition: 0.4s;
 }
 
+.btn-pdark{
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.btn-pdark:hover{
+  background-color: #4e4e4e !important;
+  color: #fff !important;
+  transition: 0.3s;
+
+}
+
+
 /* Botões */
 
 
@@ -333,6 +366,7 @@ nav {
   height: auto !important;
   padding: 25px !important;
   transition: 0.5s ease-in !important;
+  width: 100%;
 }
 
 nav ul li a {
@@ -375,7 +409,7 @@ ul, li, a .padding-nav {
   position: relative;
   padding: 0px 8px;
   margin: 5px;
-  font-weight: 200 !important;
+  /* font-weight: 200 !important; */
 }
 
 /* #ulnav:hover li a{
@@ -384,27 +418,24 @@ ul, li, a .padding-nav {
 
 #ulnav li a:hover {
   /* transform: scale(1.1); */
-  /* font-weight: 200 !important; */
   opacity: 1;
-  color: #333;
-  font-weight: bold !important;
-
+  color: #fff;
 }
 
 #ulnav li a::before {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #FDB724;
+  height: 10%;
+  background-color: #fff;
   z-index: -1;
   transform-origin: right;
   transform: scaleX(0);
   border-radius: 3px;
   transition: .4s;
-  box-shadow: 1px 0px 1px 0px #2c2b2b5e;
+  /* box-shadow: 1px 0px 1px 0px #2c2b2b5e; */
 
 }
 
@@ -437,7 +468,7 @@ nav.rolagem ul li a {
 }
 
 nav.rolagem ul li a:hover {
-  color: #1E1E1E !important;
+  color: #fff !important;
   padding-block: 10px;
   /* font-weight: 200 !important; */
 }
@@ -449,6 +480,51 @@ nav.rolagem span {
   border: none;
 
 }
+
+nav.rolagem li a {
+  transition: .3s;
+  display: block;
+  position: relative;
+  padding: 0px 8px;
+  margin: 5px;
+}
+
+/* #ulnav:hover li a{
+  opacity: 0.7;
+} */
+
+nav.rolagem li a:hover {
+  /* transform: scale(1.1); */
+  /* font-weight: 200 !important; */
+  opacity: 1;
+  color: #FDB724;
+
+}
+
+nav.rolagem li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #FDB724 !important;
+  z-index: -1;
+  transform-origin: right;
+  transform: scaleX(0);
+  border-radius: 3px;
+  transition: .4s;
+}
+
+nav.rolagem li a:hover::before {
+  transform-origin: left;
+  /*Lado onde a animação começa*/
+  transform: scaleX(1);
+  transition: transform .4s;
+}
+
+
+
 
 /* Fim Navbar Scroll */
 
@@ -467,11 +543,10 @@ div .ondas {
   left: 0 !important;
 }
 
-
 /* Animções ondas */
 
 
-@keyframes ondaAnimada {
+@keyframes ondaAnimada { /*Move as ondas para cima e para baixo*/
   0% {
     transform: translateY(-180px);
   }
@@ -481,44 +556,73 @@ div .ondas {
   }
 }
 
-.onda {
+.onda1 {
   width: 100% !important;
   height: 500px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0 !important;
-  background-image: url(img/bluewave.png);
+  background-image: url(img/bluewave2.png);
   background-size: 2000px 500px;
+  /* transform: translateY(-30%) !important;  */
+  /* opacity: 0.8; */
+}
+
+.onda2 {
+  width: 100% !important;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0 !important;
+  background-image: url(img/bluewave1.png);
+  background-size: 2000px 500px;
+  /* transform: translateY(-30%) !important;  */
+  opacity: 0.4;
+}
+
+.onda3 {
+  width: 100% !important;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0 !important;
+  background-image: url(img/bluewave2.png);
+  background-size: 2000px 500px;
+  /* transform: translateY(-30%) !important;  */
+  opacity: 0.6;
+}
+
+.onda4 {
+  width: 100% !important;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0 !important;
+  background-image: url(img/bluewave3.png);
+  background-size: 2000px 500px;
+  opacity: 0.6;
   /* transform: translateY(-30%) !important;  */
 }
 
-.ondadiff {
-  width: 100% !important;
-  height: 500px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0 !important;
-  background-image: url(img/bluewavediff.png);
-  background-size: 2000px 500px;
-  /* transform: translateY(-30%) !important;  */
-}
 
 
 /*  */
 
 @keyframes moveonda1 {
   from {
-    transform: translateX(-0px);
+    transform: translateY(60px);
   }
 }
 
 #onda1 {
   z-index: 1000;
   opacity: 1;
-  background-position-x: -100px;
-  animation: moveonda1 2s ease-in-out infinite alternate;
+  /* background-position-x: -100px; */
+  animation: moveonda1 10s ease-in-out infinite alternate;
 }
 
 
@@ -528,15 +632,15 @@ div .ondas {
 
 @keyframes moveonda2 {
   from {
-    transform: translateX(-10px);
+    transform: translateY(50px);
   }
 }
 
 #onda2 {
   z-index: 999;
   opacity: 0.5;
-  background-position-x: -200px;
-  animation: moveonda2 1.9s ease-in-out infinite alternate;
+  /* background-position-x: -200px; */
+  animation: moveonda2 8s ease-in-out infinite alternate;
 }
 
 
@@ -546,15 +650,15 @@ div .ondas {
 
 @keyframes moveonda3 {
   from {
-    transform: translateX(-10px);
+    transform: translateY(40px);
   }
 }
 
 #onda3 {
   z-index: 998;
   opacity: 0.6;
-  background-position-x: -300px;
-  animation: moveonda3 1s ease-in-out infinite alternate;
+  /* background-position-x: -300px; */
+  animation: moveonda3 6s ease-in-out infinite alternate;
 }
 
 
@@ -564,15 +668,15 @@ div .ondas {
 
 @keyframes moveonda4 {
   from {
-    transform: translateX(-0px);
+    transform: translateY(20px);
   }
 }
 
 #onda4 {
   z-index: 997;
   opacity: 0.3;
-  background-position-x: -100px;
-  animation: moveonda4 3s ease-in-out infinite alternate;
+  /* background-position-x: -100px; */
+  animation: moveonda4 5s ease-in-out infinite alternate;
   /* transform: translateZ(-100) !important; */
 }
 
@@ -687,12 +791,11 @@ div .ondas {
 .seta {
   position: relative;
   stroke: #000;
-
   width: min(17px, 2vw) !important;
   bottom: 0;
   position: relative;
   height: auto !important;
-  animation: setaAnimada 1s ease-in-out infinite alternate !important;
+  animation: setaAnimada 1.5s ease-in-out infinite alternate !important;
   mix-blend-mode: difference !important;
   /* animation: setaAnimada 3s ease-in-out infinite alternate; */
   /* transform: translateY(-70%) !important; */
@@ -829,7 +932,7 @@ div .ondas {
   left: 0 !important;
   right: 0 !important;
   /* rotate: 180px !important; */
-  transform: translateY(-13%);
+  transform: translateY(10%);
   width: 100%;
 }
 
@@ -845,8 +948,7 @@ div .ondas {
 
 .descricaoservicos {
   width: 100%;
-
-  text-align: justify;
+  text-align: left;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -973,7 +1075,7 @@ section.portifolio .flex {
   width: 100%;
   height: 100%;
   background-color: #0000008e;
-  border-radius: 25px;
+  border-radius: 15px;
   font-weight: 600;
   color: #fff;
   padding: 30px;
@@ -1015,13 +1117,13 @@ section.portifolio .flex {
   list-style: none;
   color: #1e1e1e;
   border: #1E1E1E solid 2px !important;
-  /* background-color: #939393;   */
   cursor: pointer;
   text-transform: uppercase;
   margin: 3px;
   padding: 8px !important;
   letter-spacing: 1px;
   border-radius: 5px;
+  background-color: #fffdfd;
 }
 
 .sectionprojetos ul li:hover{
@@ -1061,7 +1163,7 @@ section.portifolio .flex {
   margin-bottom: 10px;
   display: block;
   transition: .5s !important;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: 6px 0px 10px 1px #b1b0b075;
 }
 
@@ -1076,7 +1178,7 @@ section.portifolio .flex {
   width: 100%;
   height: 450px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: .5s;
 }
 
@@ -1084,7 +1186,7 @@ section.portifolio .flex {
 .image {
   position: relative;
   background-size: cover;
-  border-radius: 25px;
+  border-radius: 15px;
   top: 0;
   left: 0;
   width: 100%;
@@ -1102,27 +1204,28 @@ section.portifolio .flex {
   /* background: url(http://lorempixel.com/300/200); */
   background-color: #00000067;
   background-size: 100% 100%;
-  border-radius: 25px;
+  border-radius: 15px;
   transition: all .3s;
 }
 
 .image:hover:before {
   background-color: #00000096;
+  border-radius: 15px;
+
   /* opacity: 0.8; */
 }
 
 
 .ptitle {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   text-align: left;
-  position: absolute !important;
 }
 
 .pauthor {
   font-size: 14px;
   font-weight: 300;
-  padding-top: 30px;
+  margin-top: auto;
   text-align: left;
 }
 
@@ -1277,68 +1380,6 @@ section.portifolio .flex {
 }
 
 
-/* PLanos e Preços Cards */
-.contplanos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around !important;
-  align-items: flex-start;
-  max-width: 100%;
-
-}
-
-.cardplanos {
-  display: block;
-  flex-direction: column;
-  width: calc(33.33% - 20px);
-  min-width: 260px;
-  transition: all 0.4s;
-
-}
-
-.cardplanos:hover {
-  transform: translateY(-10px);
-  transition: all 0.4s;
-}
-
-
-.contentplanos {
-  overflow: hidden;
-  max-height: 230px; /* Altura inicial do conteúdo */
-  transition: max-height 0.4s ease; /* Transição suave ao expandir/retrair */
-  padding: 20px;
-  margin: 10px;
-}
-
-
-.contentplanos p{
-  margin-bottom: 8px;
-  line-height: normal;
-  font-size: 14px;
-  text-align: left;
-}
-
-
-.read-more {
-  /* background-color: #007bff !important; */
-  border-top: solid 3px #fff !important;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 250px;
-  font-size: 15px;
-  transition: 0.3s;
-
-}
-
-.read-more:hover {
-  font-weight: bolder;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
 /* Media query para ajustar os cards em telas menores */
 @media screen and (max-width: 768px) {
   .cardplanos, .plano {
@@ -1405,6 +1446,44 @@ section.portifolio .flex {
 /*  */
 
 
+/* PLanos e Preços Cards */
+.contplanos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around !important;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.cardplanos {
+  display: block;
+  flex-direction: column;
+  width: calc(33.33% - 20px);
+  min-width: 260px;
+  transition: all 0.4s;
+}
+
+.cardplanos:hover {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.contentplanos {
+  overflow: hidden;
+  max-height: 230px; /* Altura inicial do conteúdo */
+  transition: max-height 0.4s ease; /* Transição suave ao expandir/retrair */
+  padding: 20px;
+  margin: 10px;
+}
+
+.contentplanos p{
+  margin-bottom: 8px;
+  line-height: normal;
+  font-size: 14px;
+  text-align: left;
+}
+
+
 /* Classes tipografia e alinhamento*/
 
 .headplanos {
@@ -1446,15 +1525,61 @@ section.portifolio .flex {
 }
 
 .rodapeplanos {
+  border-top: solid 3px #fff !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 250px;
+  font-size: 15px;
+  transition: 0.3s;
   padding: 20px;
   height: 80px;
 }
 
+.button-group {
+  display: flex;
+}
 
+.read-more {
+  flex: 1; /* O botão Ler mais ocupará todo o espaço disponível */
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 5px 13px;
+  cursor: pointer;
+  margin-right: 5px; /* Espaçamento entre os botões */
+  border-bottom: transparent solid;
+  width: fit-content;
+}
+
+.read-more:hover{
+  border-bottom: #FFF 2px solid;
+  width: fit-content;
+  /* transition: 0.3s; */
+}
+
+.other-button {
+  flex: 1; /* O outro botão ocupará todo o espaço disponível */
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 5px 13px;
+  cursor: pointer;
+  margin-left: 5px; /* Espaçamento entre os botões */
+  border-bottom: transparent solid;
+  width: fit-content;
+}
+
+.other-button:hover{
+  border-bottom: #FFF 2px solid;
+  width: fit-content;
+}
 
 /* Quem Somos */
-
-.quemsomosstyle {}
 
 .quemsomosimg {
   /* max-height: 300px !important; */
@@ -1470,7 +1595,29 @@ section.portifolio .flex {
 }
 
 
-/* Formulario de Email */
+/* Fale conosco e Formulario de Email */
+
+.contfaleconosco{
+  /* background-image: url(img/fundoemail.png); */
+  /* background-image: url(img/faleconosco-bk.jpg); */
+  background-color: #1E1E1E;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.formulario-email h1 p{
+  color: #000 !important;
+  margin-bottom: 15px;
+}
+
+.formulario-email{
+  background-color: #ebf1f1;
+}
+
+.formulario-email label{
+  color: #000;
+}
 
 .formulario-email textarea,
 .formulario-email input {
@@ -1478,6 +1625,7 @@ section.portifolio .flex {
   padding: 0.8rem;
   margin-bottom: 1rem;
   transition: 0.3s;
+  color: #000;
 }
 
 .formulario-email textarea {
@@ -1490,6 +1638,7 @@ section.portifolio .flex {
   font: inherit;
   text-transform: uppercase;
   cursor: pointer;
+  background-color: #1E1E1E;
 }
 
 .formulario-email input:hover,
@@ -1542,12 +1691,17 @@ i {
 
 .rodapestyle ul li a {
   color: #ffffff !important;
+  transition: 0.3s;
+  border-bottom: 2px transparent solid;
+  width: max-content;
 }
 
 .rodapestyle ul li a:hover {
   color: #FDB724 !important;
   transform: scaleX(1) !important;
   transition: 0.3s;
+  border-bottom: 2px #FDB724 solid;
+  width: max-content;
 }
 
 .rodapestyle ul h5 {
@@ -1709,7 +1863,8 @@ i {
 
 #row-galeria img:hover {
   box-shadow: 0 0 3px #333;
-  margin-top: -10px !important;
+  /* margin-top: 20px !important; */
+  transform: translateY(-5px);
 }
 
 

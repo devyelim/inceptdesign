@@ -241,13 +241,13 @@ img {
 } */
 
 .rodapestylegaleria {
-  background-color: #e1e1e1;
+  background-color: #eaeaea;
   color: #000 !important;
   padding: 20px;
 }
 
 .borda-t{
-  border-top: #1E1E1E solid 2px;
+  border-top: #7b7b7b solid 2px;
 }
 
 .rodapestylegaleria ul {
@@ -266,13 +266,17 @@ img {
 }
 
 .rodapestylegaleria a {
-  color: #000;
-  transition: all .4s;
+  color: #1E1E1E;
+  transition: .4s !important;
+  border-bottom: 2px transparent solid;
+  width: max-content;
 }
 
 .rodapestylegaleria a:hover {
-  color: #000 !important;
-  font-weight: bold;
+  transition: .4s !important;
+  border-bottom: 2px #000 solid;
+  width: max-content;
+  /* height: auto; */
 }
 
 .rodapestylegaleria i:hover{

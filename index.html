@@ -15,24 +15,35 @@
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="personalizados.css">
     <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="loading.scss">
+
+    <!-- Jss -->
+    <!-- <script defer src="loading.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script> -->
 
     <!-- Icones Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <title>Incept Desing</title>
+    <link rel="shortcut icon" type="imagex/png" href="img/incept-ligth.ico">
   </head>
 
   <body>
+    <!-- Tela de carregamento -->
+    <div class="tela-carregamento" id="telaCarregamento"> 
+      <img class="img-fluid" style="width: 100px; height: 100px;" src="img/giphy.gif">
+    </div>
+    
 
-    <div class="container-fluid mx-auto flex-column" style="padding: 0px !important;">
+    <div class="container-fluid mx-auto flex-column" style="padding: 0px !important;" id="conteudoPagina">
     <!-- Navbar responsivo em escala lg -->
 
       <nav id="menu" class="navbar bg-transparent fixed-top navbar-expand-lg navbar-dark mb-4 fall" aria-label="Navbar">
         <!-- <div class=" mysvg"></div> -->
         <div class="container"  >
           <a  class="navbar-brand" href="/index1.html">
-            <img  id="logo" src="img/incept-ligth.png" alt="Incept Design">
+            <img id="logo" src="img/incept-ligth.png" alt="Incept Design">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarsExample07" aria-controls="navbarsExample07"
@@ -74,10 +85,10 @@
         <!-- Capa inicial, tambem em escala lg e backgroung responsivo -->        
         <section id="Inicio" class="herobk text-center img-fluid  py-lg-8 hcf-bp-center hcf-bs-cover hcf-overlay">          
           <div class="ondas" id="topo">
-            <div class="ondadiff" id="onda1"></div>
-            <div class="onda" id="onda2"></div>
-            <div class="ondadiff" id="onda3"></div>
-            <div class="onda" id="onda4"></div>
+            <div class="onda1" id="onda1"></div>
+            <div class="onda4" id="onda2"></div>
+            <div class="onda2" id="onda3"></div>
+            <div class="onda3" id="onda4"></div>
           </div>
           
           <!-- <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1881 712" fill="none">
@@ -85,7 +96,7 @@
           </svg> -->
           <div class="si-container px-4 text-center vertical">
             <div class="nocturne visit-card">
-              <h1 class="somos-incept my-4">Somos Incept</h1>
+              <h1 class="somos-incept my-4">Somos Incept </h1>
               <div class="col-lg-4 mx-auto">
                 <p class="txt-init">Criativa e socialmente consciente, 
                   somos especializados em design estratégico e empresarial.</p>
@@ -115,14 +126,14 @@
           
         </section>
 
+        <div class="onda-position" >
+          <svg class="onda-light ondasvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill = "#fff" fill-opacity="1" 
+              d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,160C960,181,1056,203,1152,186.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+          </svg>
+        </div>
         <div id="oquefazemos" class="">
-          <div class="onda-position" >
-            <svg class="onda-light ondasvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill = "#fff" fill-opacity="1" 
-                d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,160C960,181,1056,203,1152,186.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-              </path>
-            </svg>
-          </div>
           
           <div class="nocturne container align-self-center title-inner my-5 py-5">
             
@@ -146,7 +157,7 @@
                           <p class="descricaoservicos">Design criativo e inteligente não é o suficiente. 
                             É preciso complementa-lo com estratégia e técnicas de alcance!
                           </p>
-                          <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a>
+                          <!-- <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a> -->
                         </div>
                       </div>
                       <div class="col-lg-6 d-flex align-items-start p-3 mb-6">
@@ -156,7 +167,7 @@
                           <p class="descricaoservicos">Sites institucionais, lojas online e sistemas de Gestão de Negócios. 
                             Oferecemos o pacote completo para que sua empresa decole.
                           </p>
-                          <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a>
+                          <!-- <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a> -->
                         </div>
                       </div>
                     </div>
@@ -168,7 +179,7 @@
                           <p class="descricaoservicos">Criamos templates intuitivos, personalizados e exclusivos. 
                             Manter sua Identidade Visual é nossa especialidade, assim como deixar sua marca ainda mais atrativa.
                           </p>
-                          <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a>
+                          <!-- <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a> -->
                         </div>
                       </div>
                       <div class="col-lg-6 d-flex align-items-start p-3 mb-6">
@@ -178,7 +189,7 @@
                           <p class="descricaoservicos">Te ajudamos a impulsionar sua marca do zero. 
                             Alcance clientes com recursos atuais, consultoria online e profissional.
                           </p>
-                          <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a>
+                          <!-- <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a> -->
                         </div>
                       </div>
                     </div>                           
@@ -216,8 +227,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Campanha Doação de Sangue</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -226,8 +237,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Promoção de Produtos</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -236,8 +247,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Campanha Dia das Mães</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -246,8 +257,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Promoção de Produtos</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -256,8 +267,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Campanha Responsabilidade no Transito</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -266,8 +277,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Comemoração Semana Santa</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -276,8 +287,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Dia de Tiradentes</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -286,8 +297,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Semana Santa</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -296,8 +307,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Promoção de Produtos</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -306,8 +317,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Campanha Contra a Discriminação Racial</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -316,8 +327,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Descobrimento do Brasil</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -326,8 +337,8 @@
                     <div class="gobody overlay">
                       <div class="relative">
                           <a class="plink" target="_blank" href="/"></a>
-                          <h1 class="ptitle">Title 1</h1>
-                          <p class="pauthor">Mario Rossi</p>
+                          <h1 class="ptitle">Campanha Mês dos Namorados</h1>
+                          <p class="pauthor">R. Prates</p>
                       </div>
                       
                     </div>
@@ -390,39 +401,49 @@
             <div class="pt-5 my-5 py-5 text-center">
               <div class="sectionplanos mt-5">
                 <div class="contplanos">
-                  <div class="infoplanos col-lg-3 col-md-12 col-sm-12 mb-5">           
+                  <div class="infoplanos efeito-card1 col-lg-3 col-md-12 col-sm-12 mb-5">           
                     <p class="pretitulo-ligth">PLANOS E PREÇOS</p>
                     <h5 class="oferecemosservicos">OFERECEMOS PLANOS ACESSIVEIS E FLEXÍVEIS.</h5>
                     <p style="color: #fff;">Para um plano personalizado, fale conosco através do <span style="font-weight: bold;">link:</span></p>
-                    <button type="button" class="btnpersona btn-highligth btn" style="width: 250px;">ENTRAR EM CONTATO</button>
+                    <a rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=5538997442456&text=Olá! Gostaria de um plano personalizado&type=phone_number&app_absent=0" target="_blank">
+                      <button class="btnpersona btn-highligth btn" style="width: 250px;">ENTRAR EM CONTATO</button>
+                    </a>
                   </div>
-                  <div class="plano cardplanos">
+
+                  <div class="plano cardplanos efeito-card2">
                     <div class="card-header headplanos">
-                      <h3 class="nomeplanos">Plano 1</h3>
-                      <p class="precoplanos">preco</p>
-                      <p class="tipoplanos">tipo</p>
+                      <h3 class="nomeplanos">Básico</h3>
+                      <p class="precoplanos">R$ 349,90</p>
+                      <p class="tipoplanos">mensalidade</p>
                     </div>
                     <div class="card-body contentplanos">
                       <p>Conteúdo do Card 1. Este é o primeiro parágrafo.</p>
                       <p>Este é o segundo parágrafo do Card 1.</p>
                       <p>Terceiro parágrafo do Card 1.</p>
                       <p>Conteúdo do Card 1. Este é o primeiro parágrafo.</p>
-                      <p>Este é o segundo parágrafo do Card 1.</p>
-                      <p>Terceiro parágrafo do Card 1.</p>
+                      <p>Este é o segundo parágrafo do Card 1.</p>                      
+                      <p>Ultimo</p>
                       <p>Conteúdo do Card 1. Este é o primeiro parágrafo.</p>
-                      <p>Este é o segundo parágrafo do Card 1.</p>
+                      <p>Este é o segundo parágrafo do Card 1.</p>                      
                       <p>Ultimo</p>
                     </div>
-                      
-                    <button class="read-more card-footer text-center rodapeplanos">Ver todos os benefícios</button>          
-                    <!-- <button type="button" id="lermais">Ver todos os beneficios</button> -->
+                    <div class="rodapeplanos">
+                      <div class="button-group">
+                        <button class="read-more">Ver mais</button>
+                        <a rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=5538997442456&text=Olá! Tenho interesse no Plano Básico, pode me falar mais sobre ele?&type=phone_number&app_absent=0" target="_blank">
+                          <button class="other-button">Contratar</button>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- <button class="button-rodape text-center">Contratar</button> -->
+                    
                   </div>
 
-                  <div class="plano cardplanos">
-                    <div class="card-header">
-                      <h3 class="nomeplanos">Plano 1</h3>
-                      <p class="precoplanos">preco</p>
-                      <p class="tipoplanos">tipo</p>
+                  <div class="plano cardplanos efeito-card3">
+                    <div class="card-header headplanos">
+                      <h3 class="nomeplanos">Intermediário</h3>
+                      <p class="precoplanos">R$ 659,90</p>
+                      <p class="tipoplanos">mensalidade</p>
                     </div>
                     <div class="card-body contentplanos">
                       <p>Conteúdo do Card 1. Este é o primeiro parágrafo.</p>
@@ -434,17 +455,22 @@
                       <p>Conteúdo do Card 1. Este é o primeiro parágrafo.</p>
                       <p>Este é o segundo parágrafo do Card 1.</p>
                       <p>Ultimo</p>
+                    </div>                      
+                    <div class="rodapeplanos">
+                      <div class="button-group">
+                        <button class="read-more">Ver mais</button>
+                        <a rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=5538997442456&text=Olá! Tenho interesse no Plano Intermediário, pode me falar mais sobre ele?&type=phone_number&app_absent=0" target="_blank">
+                          <button class="other-button">Contratar</button>
+                        </a>
+                      </div>
                     </div>
-                      
-                    <button class="read-more card-footer text-center rodapeplanos">Ver todos os benefícios</button>          
-                    <!-- <button type="button" id="lermais">Ver todos os beneficios</button> -->
                   </div>
 
-                  <div class="plano cardplanos">
-                    <div class="card-header">
-                      <h3 class="nomeplanos">Plano 1</h3>
-                      <p class="precoplanos">preco</p>
-                      <p class="tipoplanos">tipo</p>
+                  <div class="plano cardplanos efeito-card4">
+                    <div class="card-header headplanos">
+                      <h3 class="nomeplanos">Completo</h3>
+                      <p class="precoplanos">R$ 1.299,90</p>
+                      <p class="tipoplanos">mensalidade</p>
                     </div>
                     <div class="card-body contentplanos">
                       <p>Conteúdo do Card 1. Este é o primeiro parágrafo.</p>
@@ -456,10 +482,15 @@
                       <p>Conteúdo do Card 1. Este é o primeiro parágrafo.</p>
                       <p>Este é o segundo parágrafo do Card 1.</p>
                       <p>Ultimo</p>
+                    </div>                      
+                    <div class="rodapeplanos">
+                      <div class="button-group">
+                        <button class="read-more">Ver mais</button>
+                        <a rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=5538997442456&text=Olá! Tenho interesse no Plano Completo, pode me falar mais sobre ele?&type=phone_number&app_absent=0">
+                          <button class="other-button">Contratar</button>
+                        </a>
+                      </div>
                     </div>
-                      
-                    <button class="read-more card-footer text-center rodapeplanos">Ver todos os benefícios</button>          
-                    <!-- <button type="button" id="lermais">Ver todos os beneficios</button> -->
                   </div>
                 </div>
               </div>
@@ -690,13 +721,13 @@
               <div class="pr-2 mb-4 col-lg-6 esquerda-direita">
                 <div class="row g-0 align-items-center">
                   <div class="col-md-6 col-sm-6">
-                    <img src="img/quemsomosrodrigo5.png" class=" rounded-2 quemsomosimg" alt="...">
+                    <img src="img/quemsomosrodrigo5.png" class="rounded-2 quemsomosimg" alt="...">
                   </div>
-                  <div class="col-md-6  col-sm-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="card-body">
                       <h5 class="card-title">Rodrigo Prates</h5>
                       <p>Designer Gráfico</p>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
@@ -722,18 +753,18 @@
           </div>
         </div>
            
-        <div class="container-fluid" style="background-color: #1e1e1e; color: #333;">
+        <div class="container-fluid contfaleconosco  hcf-bp-center hcf-bs-cover">
           <div class="container col-xl-10 col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-lg-2 py-5 nocturne">
-              
-              <div class="col-lg-6 text-justify text-lg-start mb-2" style="color: #e1e1e1;">
-                <h1>FALE CONOSCO</h1>
-                <p class="fs-5" style="width: 400px;">Nos envie uma solicitação de contato que te retornamos no mesmo dia.</p>
-                
-              </div>
+              <!-- <div class="col-lg-6">
+                <div class="slider-thumb"></div>
+              </div> -->
+             
 
               <div class="col-md-10 mx-auto col-lg-4" >
-                <form action="https://formsubmit.co/incepfaleconosco@gmail.com" method="POST" class="formulario-email p-4 p-md-5 rounded-3" style="background-color: #e1e1e1; border: none;">
+                <form rel="noopener noreferrer" action="https://formsubmit.co/incepfaleconosco@gmail.com" method="POST" class="formulario-email p-4 p-md-5 rounded-3">
+                  <h1>FALE CONOSCO</h1>
+                  <p>Nos envie uma solicitação de contato que te retornamos no mesmo dia.</p>
                   <div class="form-floating mb-3">
                     <input type="email" name="email" id="email" class="form-control" required placeholder="Insira seu email">
                     <label for="floatingInput">Email para contato</label>
@@ -752,7 +783,7 @@
                   <input type="text" name="_honey" style="display:none">
                   <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
 
-                  <button class="w-100 btn btn-lg btnpersona btn-yellow btn " type="submit">Enviar</button>
+                  <button class="w-100 btn btn-lg btnpersona btn-pdark btn " type="submit">Enviar</button>
                   
                 </form>
               </div>
@@ -775,11 +806,11 @@
             <div class="col-lg-9 col-sm-12 col-md-12 mx-auto">
               <div class="rowpersona" >
                 <div class="column" id="row-galeria">
-                  <img src="img/1.jpeg" class="cardsgaleria">
+                  <img id="uni-galeria" src="img/1.jpeg" class="cardsgaleria">
                   <img src="img/2.jpeg" class="cardsgaleria">
                   <img src="img/3.jpeg" class="cardsgaleriavari">                    
                 </div>
-                <div class="column custom-offset"  id="row-galeria">
+                <div class="column custom-offset" id="row-galeria">
                   <img src="img/3.jpeg" class="cardsgaleria">
                   <img src="img/4.jpeg" class="cardsgaleriavari">
                   <img src="img/6.jpeg" class="cardsgaleria">                    
@@ -808,32 +839,32 @@
       </main>
       
       <div id="Rodapé" class="container-fluid rodapestyle">
-        <footer class="py-5">
-          <div class="fixos fixed-bottom mr-4">
-            <div class="mb-3">
-              <a href='#topo'>
-                <button type="button" class="btn btn-light voltar-topo">                
-                  <h5><i class="bi bi-chevron-double-up"></i></h5>
-                </button>
-              </a>
-            </div>
-
-            <!-- Botão modo escuro/dark -->
-
-            <!-- <div class="trilho mb-4" id="trilho">
-              <div class="indicador">                
-              </div> 
-              <div class="iconcont">
-                <h5>
-                  <i class="bi bi-sun-fill sol"></i>
-                  <i class="bi bi-moon-fill lua"></i>
-                </h5>
-              </div>
-            </div> -->
+        <div class="fixos fixed-bottom mr-4">
+          <div class="mb-3">
+            <a href='#topo'>
+              <button type="button" class="btn btn-light voltar-topo">                
+                <h5><i class="bi bi-chevron-double-up"></i></h5>
+              </button>
+            </a>
           </div>
+
+          <!-- Botão modo escuro/dark -->
+
+          <!-- <div class="trilho mb-4" id="trilho">
+            <div class="indicador">                
+            </div> 
+            <div class="iconcont">
+              <h5>
+                <i class="bi bi-sun-fill sol"></i>
+                <i class="bi bi-moon-fill lua"></i>
+              </h5>
+            </div>
+          </div> -->
+        </div>
+        <footer class="pt-5">
           <div class="row py-6 border-top">
-            <div class="logo mx-4 col-lg-2 col-md-12 py-6">              
-              <img src="img/incept-ligth.png">
+            <div class="container mx-4 col-lg-2 col-md-12 my-3 pl-5" style="align-items: center !important; justify-content: center;">              
+              <img src="img/incept-ligth.png" style="width: 50px;" class="img-fluid">
             </div>
       
             <div class="col-lg-2 col-md-3 col-sm-3 my-3 pl-5">
@@ -894,7 +925,7 @@
             
           </div>
           
-          <div class="text-center border-top ">
+          <div class="text-center border-top pb-3">
             <p class="mt-4"><span class="incept">@2023 INCEPT DESIGN </span> <span class="direitosreservados">| TODOS OS DIREITOS RESERVADOS.</span> </p>
           </div>
           
