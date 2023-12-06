@@ -13,12 +13,6 @@
 html,
 body {
   height: 100%;
-  /* background-color: #fff;
-  background-image: url(img/init.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
 }
 
 body {
@@ -26,7 +20,6 @@ body {
   display: block;
   display: flex;
   transition: .5s;
-  width: 100%;
 }
 
 /* body h1, h2, h3, h4, h5, p, a, button{
@@ -72,7 +65,8 @@ h2 {
 
 
 .nocturne, .efeito-card1, .efeito-card2, .efeito-card3,
-.esquerda-direita, .direita-esquerda, .efeito-card4, .efeito-card5, .efeito-card6, .efeito-card7 {
+.esquerda-direita, .direita-esquerda, .efeito-card4, .efeito-card5, .efeito-card6, .efeito-card7, .fall-name,
+.fall-email, .fall-mensagem, .fall-env {
   visibility: hidden;
 }
 
@@ -1074,12 +1068,12 @@ section.portifolio .flex {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0000008e;
+  background-color: #00000050;
   border-radius: 15px;
   font-weight: 600;
   color: #fff;
   padding: 30px;
-  opacity: 0;
+  opacity: 1;
   transition: .5s;
 }
 
@@ -1182,7 +1176,6 @@ section.portifolio .flex {
   transition: .5s;
 }
 
-
 .image {
   position: relative;
   background-size: cover;
@@ -1191,8 +1184,8 @@ section.portifolio .flex {
   left: 0;
   width: 100%;
   height: 450px;
-  /* background: url(img/7.jpeg); */
 }
+
 .image:before {
   content: "";
   position: absolute;
@@ -1212,7 +1205,7 @@ section.portifolio .flex {
   background-color: #00000096;
   border-radius: 15px;
 
-  /* opacity: 0.8; */
+  opacity: 0.8;
 }
 
 
@@ -1552,14 +1545,15 @@ section.portifolio .flex {
   padding: 5px 13px;
   cursor: pointer;
   margin-right: 5px; /* Espaçamento entre os botões */
-  border-bottom: transparent solid;
+  border-bottom: 2px transparent solid;
   width: fit-content;
+  transition: .3s;
 }
 
 .read-more:hover{
   border-bottom: #FFF 2px solid;
-  width: fit-content;
-  /* transition: 0.3s; */
+  width: fit-content; 
+  transform-origin: left;
 }
 
 .other-button {
@@ -1570,13 +1564,15 @@ section.portifolio .flex {
   padding: 5px 13px;
   cursor: pointer;
   margin-left: 5px; /* Espaçamento entre os botões */
-  border-bottom: transparent solid;
+  border-bottom: 2px transparent solid;
   width: fit-content;
+  transition: .3s;
 }
 
 .other-button:hover{
   border-bottom: #FFF 2px solid;
   width: fit-content;
+  transform-origin: left;
 }
 
 /* Quem Somos */

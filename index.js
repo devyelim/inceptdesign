@@ -11,7 +11,7 @@ window.addEventListener('load', function() {
     setTimeout(function() {
       telaCarregamento.style.display = 'none'; // Oculta a tela de carregamento após a transição
     }, 1000); // Espera 1 segundo (1000 milissegundos) após a transição
-  }, 2000); // 3000 milissegundos = 3 segundos
+  }, 1500); // 3000 milissegundos = 3 segundos
 });
 
 
@@ -153,6 +153,36 @@ revelar.reveal('.direita-esquerda', {
   origin: 'right'
 })
 
+
+// Campos Formulario Email
+
+revelar.reveal('.fall-email', {
+  duration: 1000,
+  distance: '15px',
+  delay: 300,
+  origin: 'top'
+})
+
+revelar.reveal('.fall-name', {
+  duration: 1000,
+  distance: '15px',
+  delay: 400,
+  origin: 'top'
+})
+
+revelar.reveal('.fall-mensagem', {
+  duration: 1000,
+  distance: '15px',
+  delay: 500,
+  origin: 'top'
+})
+
+revelar.reveal('.fall-env', {
+  duration: 1000,
+  distance: '15px',
+  delay: 600,
+  origin: 'top'
+})
 
 
 

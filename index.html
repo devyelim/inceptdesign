@@ -40,8 +40,8 @@
     <!-- Navbar responsivo em escala lg -->
 
       <nav id="menu" class="navbar bg-transparent fixed-top navbar-expand-lg navbar-dark mb-4 fall" aria-label="Navbar">
-        <!-- <div class=" mysvg"></div> -->
-        <div class="container"  >
+      
+        <div class="container">
           <a  class="navbar-brand" href="/index1.html">
             <img id="logo" src="img/incept-ligth.png" alt="Incept Design">
           </a>
@@ -119,21 +119,17 @@
                 </svg> -->
               </div>
             </div>
-           
           </div>
-          
-          
-          
         </section>
 
-        <div class="onda-position" >
+        <div class="onda-position">
           <svg class="onda-light ondasvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill = "#fff" fill-opacity="1" 
               d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,160C960,181,1056,203,1152,186.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
             </path>
           </svg>
         </div>
-        <div id="oquefazemos" class="">
+        <div id="oquefazemos">
           
           <div class="nocturne container align-self-center title-inner my-5 py-5">
             
@@ -146,11 +142,11 @@
                 nossa consultoria online e completa.
               </p>
               </div>
-              <div class="col-lg-9 col-sm-10 col-9" style="margin: 0px !important;">
-                <div class="text-justify">
+              <div class="col-lg-9 col-sm-12 col-12" style="margin: 0px !important;">
+                <div class="container">
                   <div class="row">
-                    <div class="row">
-                      <div class="col-lg-6 d-flex align-items-start p-3 mb-6">
+                    <div class="row ">
+                      <div class="col-lg-6 col-sm-12 d-flex align-items-start p-3 mb-6">
                         <img src="img/inspiracao.png" class="imgservicos">
                         <div class="pl-2">
                           <h5 class="tituloservicos">ESTRATÉGIA</h5>
@@ -160,7 +156,7 @@
                           <!-- <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a> -->
                         </div>
                       </div>
-                      <div class="col-lg-6 d-flex align-items-start p-3 mb-6">
+                      <div class="col-lg-6 col-sm-12 d-flex align-items-start p-3 mb-6">
                         <img src="img/codificacao.png" class="imgservicos">
                         <div class="pl-2">
                           <h5>DESENVOLVIMENTO</h5>
@@ -172,7 +168,7 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-6 d-flex align-items-start p-3 mb-6">
+                      <div class="col-lg-6 col-sm-12 d-flex align-items-start p-3 mb-6">
                         <img src="img/vetor.png" class="imgservicos">
                         <div class="pl-2">
                           <h5>WEB DESING</h5>
@@ -182,7 +178,7 @@
                           <!-- <a class="btn btn-reedmore fw-bold"><span><i class="bi bi-arrow-return-right"></i>Ver todos os benefícios!</span></a> -->
                         </div>
                       </div>
-                      <div class="col-lg-6 d-flex align-items-start p-3 mb-6">
+                      <div class="col-lg-6 col-sm-12 d-flex align-items-start p-3 mb-6">
                         <img src="img/lancamento.png" class="imgservicos">
                         <div class="pl-2">
                           <h5>MARKETING DIGITAL</h5>
@@ -396,7 +392,7 @@
         </div> -->
     
 
-        <section class="container-fluid planosbk img-fluid cover py-lg-10 hcf-bp-center hcf-bs-cover">
+        <section id="planoseprecos" class="container-fluid planosbk img-fluid cover py-lg-10 hcf-bp-center hcf-bs-cover">
           <div class="container">
             <div class="pt-5 my-5 py-5 text-center">
               <div class="sectionplanos mt-5">
@@ -712,7 +708,7 @@
 
         <div class="espaco-vertical"></div>
 
-        <div class=" container-fluid">
+        <div class="container-fluid">
           <div id="Quem somos" class="container">
             <div class="row container nocturne my-5 p-5">
               <h2 class="titulos text-justify mb-5">FUNDADORES</h2>
@@ -765,15 +761,15 @@
                 <form rel="noopener noreferrer" action="https://formsubmit.co/incepfaleconosco@gmail.com" method="POST" class="formulario-email p-4 p-md-5 rounded-3">
                   <h1>FALE CONOSCO</h1>
                   <p>Nos envie uma solicitação de contato que te retornamos no mesmo dia.</p>
-                  <div class="form-floating mb-3">
+                  <div class="form-floating mb-3 fall-email">
                     <input type="email" name="email" id="email" class="form-control" required placeholder="Insira seu email">
                     <label for="floatingInput">Email para contato</label>
                   </div>
-                  <div class="form-floating mb-3">
+                  <div class="form-floating mb-3 fall-name">
                     <input type="text" name="name" id="name" class="form-control" required placeholder="Seu nome">
                     <label for="floatingInput">Seu Nome</label>
                   </div>
-                  <div class="form-floating mb-3">
+                  <div class="form-floating mb-3 fall-mensagem">
                     <textarea name="message" class="form-control"  rows="10" required placeholder="Em que podemos te ajudar?"></textarea>
                     <label for="floatingInput" id="message">Mensagem</label>
                   </div>
@@ -783,13 +779,15 @@
                   <input type="text" name="_honey" style="display:none">
                   <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
 
-                  <button class="w-100 btn btn-lg btnpersona btn-pdark btn " type="submit">Enviar</button>
+                  <button class="w-100 btn btn-lg btnpersona btn-pdark btn fall-env" type="submit">Enviar</button>
                   
                 </form>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="espaco-vertical"></div>
 
         <section id="Galeria" class="container my-5 direita-esquerda col-xxl-8" >
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
